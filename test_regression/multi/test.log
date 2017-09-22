@@ -1,0 +1,321 @@
+CRITICAL : Run started at Sun Dec 01 12:24:07 2013
+DEBUG    : average score before: -1503802.365831
+DEBUG    : b_score = -1112975.328269
+DEBUG    : iteration: 0
+INFO     : Interim results at iteration 0
+INFO     : best gene was: [139, 135, 5566, 800, 1649, 149, 111, 1635, 2883, 5371, 126, 100, 31, 4961, 1848, 130, 140, 958, 5052, 4061, 140, 148, 4167, 2432, 8785]
+INFO     : on loop 0, with score -1112975.328269
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -1370175.840056
+INFO     : ======================================================
+INFO     : Total cost ($M): 1112975.33, including carbon (MT): 96.16, terminal value ($M): 0.00
+INFO     : ======================================================
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2010:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 221653.82, carbon (MT): 76.71
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 794.54, GWh 21187.62) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 2000.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 160300.00, GWh 3108631.60) : Wind with site capacities (MW): (22: 55660.00)  (33: 8000.00)  (44: 16490.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 2740.00, GWh 83219.12) : Solar_Thermal with site capacities (MW): (77: 1350.00)  (88: 1390.00) 
+INFO     : fossil ($M 57819.29, GWh 54630.48) : Instant Fossil Max Thermal, max capacity (MW) 16168.60
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2020:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 200397.16, carbon (MT): 0.34
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 197780.00, GWh 6486739.18) : Wind with site capacities (MW): (22: 72010.00)  (33: 36830.00)  (44: 70200.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 2600.00, GWh 162998.45) : Solar_Thermal with site capacities (MW): (77: 2460.00)  (88: 2880.00) 
+INFO     : fossil ($M 17.16, GWh 381.28) : Instant Fossil Max Thermal, max capacity (MW) 16168.60
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2030:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 139541.65, carbon (MT): 6.42
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 136800.00, GWh 5189721.45) : Wind with site capacities (MW): (22: 16660.00)  (33: 78440.00)  (44: 72190.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 2260.00, GWh 148959.01) : Solar_Thermal with site capacities (MW): (77: 2110.00)  (88: 2750.00) 
+INFO     : fossil ($M 481.65, GWh 7135.48) : Instant Fossil Max Thermal, max capacity (MW) 16168.60
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2040:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 240822.70, carbon (MT): 12.68
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 201420.00, GWh 4862540.33) : Wind with site capacities (MW): (22: 9890.00)  (33: 100130.00)  (44: 59090.00)  (66: 300.00) 
+INFO     : solar ($M 2700.00, GWh 150852.84) : Solar_Thermal with site capacities (MW): (77: 2400.00)  (88: 2560.00) 
+INFO     : fossil ($M 36702.70, GWh 14088.93) : Instant Fossil Max Thermal, max capacity (MW) 10124.20
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2050:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 310560.00, carbon (MT): 0.00
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 307680.00, GWh 8702624.08) : Wind with site capacities (MW): (22: 51250.00)  (33: 74840.00)  (44: 128460.00) 
+INFO     : solar ($M 2880.00, GWh 168854.53) : Solar_Thermal with site capacities (MW): (77: 2880.00)  (88: 2700.00) 
+INFO     : fossil ($M 0.00, GWh 0.00) : Instant Fossil Max Thermal, max capacity (MW) 10124.20
+INFO     : ======================================================
+DEBUG    : b_score = -1022197.633538
+DEBUG    : iteration: 1
+DEBUG    : b_score = -1023592.836696
+DEBUG    : iteration: 2
+DEBUG    : b_score = -956402.301153
+DEBUG    : iteration: 3
+DEBUG    : b_score = -890973.279459
+DEBUG    : iteration: 4
+DEBUG    : b_score = -771361.473008
+DEBUG    : iteration: 5
+DEBUG    : b_score = -755598.213348
+DEBUG    : iteration: 6
+DEBUG    : b_score = -671313.526449
+DEBUG    : iteration: 7
+DEBUG    : b_score = -734614.799656
+DEBUG    : iteration: 8
+DEBUG    : b_score = -734614.799656
+DEBUG    : iteration: 9
+DEBUG    : b_score = -736431.327654
+DEBUG    : iteration: 10
+DEBUG    : b_score = -649197.425625
+DEBUG    : iteration: 11
+DEBUG    : b_score = -642855.213296
+DEBUG    : iteration: 12
+DEBUG    : b_score = -636959.145045
+DEBUG    : iteration: 13
+DEBUG    : b_score = -598398.656675
+DEBUG    : iteration: 14
+DEBUG    : b_score = -598218.441003
+DEBUG    : iteration: 15
+DEBUG    : b_score = -598398.656675
+DEBUG    : iteration: 16
+DEBUG    : b_score = -592268.209131
+DEBUG    : iteration: 17
+DEBUG    : b_score = -592268.209131
+DEBUG    : iteration: 18
+DEBUG    : b_score = -582993.099834
+DEBUG    : iteration: 19
+DEBUG    : b_score = -582993.099834
+DEBUG    : iteration: 20
+DEBUG    : b_score = -585116.752770
+DEBUG    : iteration: 21
+DEBUG    : b_score = -578216.112304
+DEBUG    : iteration: 22
+DEBUG    : b_score = -571965.262170
+DEBUG    : iteration: 23
+DEBUG    : b_score = -571965.262170
+DEBUG    : iteration: 24
+DEBUG    : b_score = -569927.002170
+DEBUG    : iteration: 25
+DEBUG    : b_score = -569927.002170
+DEBUG    : iteration: 26
+DEBUG    : b_score = -569927.002170
+DEBUG    : iteration: 27
+DEBUG    : b_score = -563371.937164
+DEBUG    : iteration: 28
+DEBUG    : b_score = -563371.937164
+DEBUG    : iteration: 29
+DEBUG    : b_score = -561165.297416
+DEBUG    : iteration: 30
+DEBUG    : b_score = -561165.297416
+DEBUG    : iteration: 31
+DEBUG    : b_score = -561077.995690
+DEBUG    : iteration: 32
+DEBUG    : b_score = -560890.277718
+DEBUG    : iteration: 33
+DEBUG    : b_score = -560890.277718
+DEBUG    : iteration: 34
+DEBUG    : b_score = -560890.277718
+DEBUG    : iteration: 35
+DEBUG    : b_score = -560890.277718
+DEBUG    : iteration: 36
+DEBUG    : b_score = -555973.640092
+DEBUG    : iteration: 37
+DEBUG    : b_score = -544268.323145
+DEBUG    : iteration: 38
+DEBUG    : b_score = -544080.605174
+DEBUG    : iteration: 39
+DEBUG    : b_score = -544080.605174
+DEBUG    : iteration: 40
+DEBUG    : b_score = -544080.605174
+DEBUG    : iteration: 41
+DEBUG    : b_score = -542369.942965
+DEBUG    : iteration: 42
+DEBUG    : b_score = -542369.942965
+DEBUG    : iteration: 43
+DEBUG    : b_score = -542369.942965
+DEBUG    : iteration: 44
+DEBUG    : b_score = -525467.754881
+DEBUG    : iteration: 45
+DEBUG    : b_score = -525467.754881
+DEBUG    : iteration: 46
+DEBUG    : b_score = -525241.760838
+DEBUG    : iteration: 47
+DEBUG    : b_score = -525241.760838
+DEBUG    : iteration: 48
+DEBUG    : b_score = -525241.760838
+DEBUG    : iteration: 49
+DEBUG    : b_score = -520896.666247
+DEBUG    : iteration: 50
+DEBUG    : b_score = -520670.672204
+DEBUG    : iteration: 51
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 52
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 53
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 54
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 55
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 56
+DEBUG    : b_score = -516355.963115
+DEBUG    : iteration: 57
+DEBUG    : b_score = -515637.870119
+DEBUG    : iteration: 58
+DEBUG    : b_score = -515637.870119
+DEBUG    : iteration: 59
+DEBUG    : b_score = -514868.932355
+DEBUG    : iteration: 60
+DEBUG    : b_score = -515186.856977
+DEBUG    : iteration: 61
+DEBUG    : b_score = -513050.279125
+DEBUG    : iteration: 62
+DEBUG    : b_score = -512417.610628
+DEBUG    : iteration: 63
+DEBUG    : b_score = -512417.610628
+DEBUG    : iteration: 64
+DEBUG    : b_score = -510535.403737
+DEBUG    : iteration: 65
+DEBUG    : b_score = -510294.328094
+DEBUG    : iteration: 66
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 67
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 68
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 69
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 70
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 71
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 72
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 73
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 74
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 75
+DEBUG    : b_score = -509230.160217
+DEBUG    : iteration: 76
+DEBUG    : b_score = -520469.017001
+DEBUG    : iteration: 77
+DEBUG    : b_score = -520469.017001
+DEBUG    : iteration: 78
+DEBUG    : b_score = -518954.713312
+DEBUG    : iteration: 79
+DEBUG    : b_score = -506928.824274
+DEBUG    : iteration: 80
+DEBUG    : b_score = -506928.824274
+DEBUG    : iteration: 81
+DEBUG    : b_score = -505273.897297
+DEBUG    : iteration: 82
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 83
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 84
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 85
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 86
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 87
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 88
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 89
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 90
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 91
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 92
+DEBUG    : b_score = -545133.568414
+DEBUG    : iteration: 93
+DEBUG    : b_score = -534717.153729
+DEBUG    : iteration: 94
+DEBUG    : b_score = -534717.153729
+DEBUG    : iteration: 95
+DEBUG    : b_score = -512408.106113
+DEBUG    : iteration: 96
+DEBUG    : b_score = -505270.453764
+DEBUG    : iteration: 97
+DEBUG    : b_score = -512408.106113
+DEBUG    : iteration: 98
+DEBUG    : b_score = -511739.529285
+DEBUG    : iteration: 99
+CRITICAL : Run time: 52.48 seconds
+INFO     : best gene was: [132, 950, 1848, 1204, 685, 119, 108, 1242, 114, 138, 116, 1049, 138, 318, 1745, 145, 801, 2531, 913, 996, 116, 146, 703, 431, 77]
+INFO     : on loop 83, with score -505270.453764
+DEBUG    : 2 nuke/s dropped
+DEBUG    : average score after: -549870.643865
+INFO     : ======================================================
+INFO     : Total cost ($M): 505270.45, including carbon (MT): 1196.17, terminal value ($M): 0.00
+INFO     : ======================================================
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2010:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 169090.13, carbon (MT): 512.09
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 5118.34, GWh 136489.05) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 2000.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 74740.00, GWh 1298008.79) : Wind with site capacities (MW): (22: 18480.00)  (33: 12040.00)  (44: 6850.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 10820.00, GWh 308823.62) : Solar_Thermal with site capacities (MW): (77: 9500.00)  (88: 1320.00) 
+INFO     : fossil ($M 78411.79, GWh 371835.22) : Instant Fossil Max Thermal, max capacity (MW) 20013.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2020:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 40783.62, carbon (MT): 172.67
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 29880.00, GWh 1884479.08) : Wind with site capacities (MW): (22: 30900.00)  (33: 13180.00)  (44: 8230.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 2270.00, GWh 377950.46) : Solar_Thermal with site capacities (MW): (77: 10580.00)  (88: 2510.00) 
+INFO     : fossil ($M 8633.62, GWh 191858.22) : Instant Fossil Max Thermal, max capacity (MW) 20013.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2030:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 91940.24, carbon (MT): 321.33
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 44020.00, GWh 1407749.80) : Wind with site capacities (MW): (22: 13800.00)  (33: 4320.00)  (44: 18830.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 11650.00, GWh 400399.40) : Solar_Thermal with site capacities (MW): (77: 11570.00)  (88: 2350.00) 
+INFO     : fossil ($M 36270.24, GWh 357037.56) : Instant Fossil Max Thermal, max capacity (MW) 23490.20
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2040:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 155478.28, carbon (MT): 49.15
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 88800.00, GWh 2436226.01) : Wind with site capacities (MW): (22: 26690.00)  (33: 12310.00)  (44: 27410.00)  (66: 300.00) 
+INFO     : solar ($M 9460.00, GWh 602684.64) : Solar_Thermal with site capacities (MW): (77: 18500.00)  (88: 2610.00) 
+INFO     : fossil ($M 57218.28, GWh 54614.83) : Instant Fossil Max Thermal, max capacity (MW) 18420.90
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2050:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 47978.18, carbon (MT): 140.92
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 24220.00, GWh 2029210.20) : Wind with site capacities (MW): (22: 32340.00)  (33: 13440.00)  (44: 10730.00) 
+INFO     : solar ($M 2620.00, GWh 350183.29) : Solar_Thermal with site capacities (MW): (77: 9470.00)  (88: 2610.00) 
+INFO     : fossil ($M 21138.18, GWh 156579.13) : Instant Fossil Max Thermal, max capacity (MW) 18420.90
+INFO     : ======================================================
+DEBUG    : Finalising geneticalgorithm

@@ -1,0 +1,104 @@
+# Sample MUREIL configuration
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+global: Global
+optim_type: missed_supply
+iterations: 25
+output_file: mureil_sample.pkl
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+hydro: Hydro
+gas: Gas
+browncoal: BrownCoal
+blackcoal: BlackCoal
+missed_supply: MissedSupply
+data: Data
+dispatch_order: solar wind browncoal blackcoal hydro gas missed_supply
+do_plots: True
+#dispatch_order: solar wind fossil hydro missed_supply
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+#time_period_yrs: 20
+variable_cost_mult: 240
+carbon_price: 100
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 50
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+capex: 1.0
+#capex: 50.0
+size: 50
+install: 1000
+type: Solar_Thermal
+data_type: ts_solar
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+#capex: 3.0
+capex: 1.2
+size: 2.5
+install: 500
+type: Wind
+data_type: ts_wind
+
+[Hydro]
+model: hydro.basicpumpedhydro.BasicPumpedHydro
+capex: 2.0
+max_gen: 2000
+dam_capacity: 10000
+starting_level: 5000
+water_factor: 0.01
+pump_round_trip: 0.8
+
+[BrownCoal]
+model: thermal.slowresponsethermal.SlowResponseThermalFixed
+capex: 1.0
+# fuel price and carbon price are $ per MWh of generation
+# note these here are not realistic
+fuel_price_mwh: 5
+carbon_intensity: 1.3
+ramp_time_mins: 480
+type: Brown_Coal
+fixed_capacity: 2000
+
+[BlackCoal]
+model: thermal.slowresponsethermal.SlowResponseThermal
+capex: 1.0
+# fuel price and carbon price are $ per MWh of generation
+# note these here are not realistic
+fuel_price_mwh: 50
+carbon_intensity: 1.0
+ramp_time_mins: 240
+type: Black_Coal
+
+[Gas]
+#model: thermal.instantthermal.InstantMaxThermal
+model: thermal.instantthermal.InstantOptimisableThermal
+capex: 1.0
+# fuel price and carbon price are $ per MWh of generation
+# note these here are just plucked out of the air
+fuel_price_mwh: 200
+carbon_intensity: 0.8
+
+[MissedSupply]
+model: missed_supply.missedsupply.CappedMissedSupply
+cost_per_mwh: 12500
+reliability_reqt: 0.002
+penalty: 100000
+
+[Data]
+model: data.mg_sample_data.Data

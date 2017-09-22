@@ -1,0 +1,80 @@
+# Sample MUREIL configuration
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+global: Global
+optim_type: missed_supply
+iterations: 25
+output_file: mureil_sample.pkl
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+hydro: Hydro
+fossil: Fossil
+missed_supply: MissedSupply
+data: Data
+dispatch_order: solar wind hydro fossil missed_supply
+do_plots: False
+#dispatch_order: solar wind fossil hydro missed_supply
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+#time_period_yrs: 20
+variable_cost_mult: 1.0
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 50
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+capex: 1.0
+#capex: 50.0
+size: 50
+install: 1000
+type: Solar_Thermal
+data_type: ts_solar
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+#capex: 3.0
+capex: 1.2
+size: 2.5
+install: 500
+type: Wind
+data_type: ts_wind
+
+[Hydro]
+model: hydro.basicpumpedhydro.BasicPumpedHydro
+capex: 2.0
+max_gen: 2000
+dam_capacity: 10000
+starting_level: 5000
+water_factor: 0.01
+pump_round_trip: 0.8
+
+[Fossil]
+model: thermal.instantthermal.InstantMaxThermal
+#model: thermal.instantthermal.InstantOptimisableThermal
+capex: 1.0
+# fuel price and carbon price are $ per MWh of generation
+fuel_price_mwh: 30000
+carbon_price: 10000
+carbon_intensity: 1.0
+
+[MissedSupply]
+model: missed_supply.missedsupply.CappedMissedSupply
+cost_per_mwh: 12500
+reliability_reqt: 0.002
+penalty: 1000
+
+[Data]
+model: data.mg_sample_data.Data

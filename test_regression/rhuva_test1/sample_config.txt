@@ -1,0 +1,89 @@
+# Sample MUREIL configuration
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+hydro: Hydro
+fossil: Fossil
+missed_supply: MissedSupply
+data: Data_New
+global: Global
+optim_type: missed_supply
+iterations: 100
+output_file: mureil_sample.pkl
+dispatch_order: solar wind hydro fossil missed_supply
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+#time_period_yrs: 20
+variable_cost_mult: 1.0
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 100
+mort: 0.5
+nuke_power: 20
+processes: 4
+seed: 12345
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+capex: 1.0
+#capex: 50.0
+size: 50
+install: 1000
+type: Solar_Thermal
+data_type: ts_solar
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorLinearInstall
+#capex: 1.2
+capex: 3000
+# Size = 0.001 is so that the data in the input wind data converts to
+# the units requred - there was a divide-by-1000 in the 'wind' code.
+# TODO - solve this properly - when all the units are standardisd.
+size: 0.001
+#wind_turbine: 2.5
+install: 500
+type: Wind
+data_type: ts_wind
+
+
+[Hydro]
+model: hydro.basicpumpedhydro.BasicPumpedHydro
+capex: 2.0
+max_gen: 2000
+dam_capacity: 10000
+starting_level: 5000
+water_factor: 0.01
+pump_round_trip: 0.8
+
+[Fossil]
+model: thermal.instantthermal.InstantMaxThermal
+capex: 1.0
+fuel_price_mwh: 30000
+carbon_price: 10000
+carbon_intensity: 1.0
+
+[MissedSupply]
+model: missed_supply.missedsupply.LinearMissedSupply
+cost_per_mwh: 0.005
+
+[Data]
+model: rhuva_data1.Data
+
+[Data_New]
+description: some of Robert's 2 month data
+model: data.ncdata.Data
+ts_float_list: ts_wind ts_solar ts_demand
+ts_wind_file: CoV_wind_station_output_prox_penalty.nc
+ts_wind_vbl: CoV_wind
+ts_solar_file: CoV_dsr_station_output_prox_penalty.nc
+ts_solar_vbl: CoV_dsr
+ts_demand_file: Aus_demand_sample_raw.nc

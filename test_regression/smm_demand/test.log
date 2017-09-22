@@ -1,0 +1,127 @@
+CRITICAL : Run started at Sat Aug 10 21:01:21 2013
+DEBUG    : average score before: -58438.376697
+DEBUG    : b_score = -28205.151615
+DEBUG    : iteration: 0
+INFO     : Interim results at iteration 0
+INFO     : best gene was: [31, 4961, 1848, 6075]
+INFO     : on loop 0, with score -28205.151615
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -42960.083748
+INFO     : gas ($M 12368.49) : Instant Fossil Thermal, optimisable, max capacity (MW) 6075.00
+INFO     : coal ($M 9176.03) : Instant Fossil Thermal, optimisable, max capacity (MW) 1848.00
+INFO     : wind ($M 5953.20) : Wind with capacities (MW): 4961.00 
+INFO     : solar ($M 62.00) : Solar with capacities (MW): 31.00 
+INFO     : demand ($M 0.00) : Victorian temperature demand model
+INFO     : missed_supply ($M 645.43) : Timestep Linear Missed-Supply, total 412.32 MW-timestamps missed, reliability 99.702%
+INFO     : Total cost ($M): 28205.15
+DEBUG    : b_score = -28205.151615
+DEBUG    : iteration: 1
+DEBUG    : b_score = -26884.335382
+DEBUG    : iteration: 2
+DEBUG    : b_score = -26884.335382
+DEBUG    : iteration: 3
+DEBUG    : b_score = -26884.335382
+DEBUG    : iteration: 4
+DEBUG    : b_score = -26924.608848
+DEBUG    : iteration: 5
+DEBUG    : b_score = -26924.608848
+DEBUG    : iteration: 6
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 7
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 8
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 9
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 10
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 11
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 12
+DEBUG    : b_score = -26316.580071
+DEBUG    : iteration: 13
+DEBUG    : b_score = -26316.580071
+DEBUG    : iteration: 14
+DEBUG    : b_score = -26316.580071
+DEBUG    : iteration: 15
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 16
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 17
+DEBUG    : b_score = -26343.730098
+DEBUG    : iteration: 18
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 19
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 20
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 21
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 22
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 23
+DEBUG    : b_score = -26117.715593
+DEBUG    : iteration: 24
+DEBUG    : b_score = -26315.883981
+DEBUG    : iteration: 25
+DEBUG    : b_score = -26315.883981
+DEBUG    : iteration: 26
+DEBUG    : b_score = -26315.883981
+DEBUG    : iteration: 27
+DEBUG    : b_score = -26315.883981
+DEBUG    : iteration: 28
+DEBUG    : b_score = -26315.883981
+DEBUG    : iteration: 29
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 30
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 31
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 32
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 33
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 34
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 35
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 36
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 37
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 38
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 39
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 40
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 41
+DEBUG    : b_score = -26315.513749
+DEBUG    : iteration: 42
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 43
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 44
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 45
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 46
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 47
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 48
+DEBUG    : b_score = -26302.966714
+DEBUG    : iteration: 49
+CRITICAL : Run time: 15.05 seconds
+INFO     : best gene was: [996, 8252, 175, 6995]
+INFO     : on loop 19, with score -26117.715593
+DEBUG    : 10 nuke/s dropped
+DEBUG    : average score after: -26306.479884
+INFO     : gas ($M 13461.86) : Instant Fossil Thermal, optimisable, max capacity (MW) 6995.00
+INFO     : coal ($M 761.45) : Instant Fossil Thermal, optimisable, max capacity (MW) 175.00
+INFO     : wind ($M 9902.40) : Wind with capacities (MW): 8252.00 
+INFO     : solar ($M 1992.00) : Solar with capacities (MW): 996.00 
+INFO     : demand ($M 0.00) : Victorian temperature demand model
+INFO     : missed_supply ($M 0.00) : Timestep Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : Total cost ($M): 26117.72
+DEBUG    : Finalising geneticalgorithm

@@ -1,0 +1,91 @@
+# MUREIL configuration for simple test of flow model
+
+[Master]
+model: master.txmultimasterflow.TxMultiMasterFlow
+global: Global
+iterations: 25
+output_file: flow1_win.pkl
+algorithm: Algorithm
+wind: Wind
+gas: Gas
+coal: Coal
+data: Data_Single
+demand: Demand
+transmission: Transmission
+generators: wind gas coal
+run_periods: 2010 2020
+#run_periods: 2010
+#do_plots: True
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+time_period_yrs: 10
+carbon_price: {2010: 25, 2020: 50, 2030: 75, 2040: 100, 2050:150}
+#carbon_price: 0
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 15
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Wind]
+model: generator.txmultivariablegenerator.TxMultiVariableGeneratorBase
+capital_cost: 2.0
+size: 10
+vom: 1
+detail_type: Wind
+data_name: ts_wind
+lifetime_yrs: 20
+params_to_site_data_string: 1001 1002 1003 1004
+
+[Gas]
+model: thermal.txmultiinstantthermal.TxMultiInstantOptimisableThermal
+capital_cost: 3.5
+fuel_price_mwh: 20  
+carbon_intensity: 0.9
+lifetime_yrs: 30
+site_index: 2001
+
+[Coal]
+model: thermal.txmultiinstantthermal.TxMultiInstantOptimisableThermal
+capital_cost: 2.5
+fuel_price_mwh: 10
+carbon_intensity: 1.4
+lifetime_yrs: 40
+site_index: 2002
+
+[Demand]
+model: demand.demandmatrix.DemandMatrix
+data_name: ts_demand
+node_list_name: ts_demand_hdr
+bid_price: 10000
+scale: {2010: 1.0, 2020: 1.15}
+
+[MarketSolver]
+model: transmission.market_clearing_engine.MarketClearingEngine
+
+[Transmission]
+# NOTE: ROAM Consulting is acknowledged as the source of the transmission
+# network data used here. (22-node model).
+model: transmission.txgrid.TxGrid
+site_filename: tx_connect_map.csv
+grid_filenames: nodes.csv lines.csv shift_factors.csv A-matrix.csv
+
+[Data_Short]
+model: data.ncdata.Data
+ts_csv_list: ts_demand ts_wind
+ts_demand_file: nodal_demand_short.csv
+ts_wind_file: wind_data_short.csv
+
+[Data_Single]
+model: data.ncdata.Data
+ts_csv_list: ts_demand ts_wind
+ts_demand_file: nodal_demand_short_win.csv
+ts_wind_file: wind_data_short_win.csv

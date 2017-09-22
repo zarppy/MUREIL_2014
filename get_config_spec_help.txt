@@ -1,0 +1,1097 @@
+------------------------------------------------------------------------------
+Module: algorithm.geneticalgorithm
+Class:  Engine
+------------------------------------------------------------------------------
+Main engine for genetic algorithm. To use, call the
+    following functions, in order:
+    - set_config(config) where config is a dict with fields listed in
+        get_config_spec
+    - prepare_run() so multiprocessing can be started
+    - loop through do_iteration()
+    - get_final() to extract the results
+    - finalise() to clean up multiprocessing
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            processes: number of processes to spawn, if 0, no multiprocessing
+            seed: integer to seed randomiser
+            pop_size: integer specifying population size
+            mort: float defining mortality rate
+            min_len: minimum gene length
+            max_len: maximum gene length
+            min_param_val: minimum gene value value
+            max_param_val: maximum gene value value
+            base_mute: the rate (proportion) of gene values that mutate
+                to rand(min_param_val, max_param_val) on each iteration.
+            gene_mute: the rate (proportion) of genes that change length
+                on each iteration - set this to 0 if min_len == max_len.
+            local_mute: the rate (proportion) of gene values that mutate
+                within the radius of current value * local_mute_size on each iteration
+            local_mute_size: the radius of mutation for local mute, as a proportion
+                of the current value.
+            gene_test_callback: function handle to calculate cost of gene. This function
+                must be thread-safe as it will be called in multiprocessing.
+            start_values_min: list of minimum initialisation values for genes.
+                Should be empty, or the same length as min_len.
+            start_values_max: as for start_values_min, but maximum.
+        
+------------------------------------------------------------------------------
+Module: algorithm.geneticalgorithm_descend
+Class:  Engine
+------------------------------------------------------------------------------
+Main engine for genetic algorithm. To use, call the
+    following functions, in order:
+    - set_config(config) where config is a dict with fields listed in
+        get_config_spec
+    - prepare_run() so multiprocessing can be started
+    - loop through do_iteration()
+    - get_final() to extract the results
+    - finalise() to clean up multiprocessing
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            processes: number of processes to spawn, if 0, no multiprocessing
+            seed: integer to seed randomiser
+            pop_size: integer specifying population size
+            mort: float defining mortality rate
+            min_len: minimum gene length
+            max_len: maximum gene length
+            min_param_val: minimum gene value value
+            max_param_val: maximum gene value value
+            base_mute: ?
+            gene_mute: ?
+            gene_test_callback: function handle to calculate cost of gene. This function
+                must be thread-safe as it will be called in multiprocessing.
+            start_values_min: list of minimum initialisation values for genes.
+                Should be empty, or the same length as min_len.
+            start_values_max: as for start_values_min, but maximum.
+        
+------------------------------------------------------------------------------
+Module: data.datasinglepassbase
+Class:  DataSinglePassBase
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: data.mg_sample_data
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: data.ncdata
+Class:  Data
+------------------------------------------------------------------------------
+Read in a list of variables from netCDF files.
+    Checks if they are numpy.array(dtype=float), and if not,
+    copies them to a numpy.array(dtype=float) array.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+        description: a single-line text description of the dataset - e.g. VIC Feb 2009, 4x wind, 2x solar
+        dir: full or relative path to file directory
+
+        ts_float_list: list of names of floating point timeseries data - e.g. ts_wind, ts_solar.
+            The ts_float_list and ts_int_list data are filtered for NaNs and timepoints with
+            NaNs in any of the series are dropped out of all in ts_float_list and ts_int_list.
+        ts_int_list: list of names of integer timeseries data, filtered for NaN with the ts_list. Note
+            that numpy.nan cannot be stored in an integer array, so if you want nans, they must be in
+            float arrays.
+
+        other_float_list: list of names of other datasets, floating point type
+        other_int_list: list of names of other datasets, integer type
+        
+        then for each name in ts_float_list, ts_int_list, other_float_list, other_int_list, e.g. ts_wind:
+        ts_wind_file: filename of netCDF file with wind data
+        ts_wind_vbl: optional - the name of the variable within the netCDF file. Defaults to 
+            the series name, here ts_wind.
+        
+------------------------------------------------------------------------------
+Module: data.rhuva_data0
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: data.rhuva_data1
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: data.rhuva_data2
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: data.sample_ge_data
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: demand.txmulti_victempdemand
+Class:  VicTempDemand
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Module implementing bottom-up temperature-based demand model for Victoria.
+    Module for demand model using the TxMultiGeneratorBase base class.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorBase, plus:
+
+
+        Configuration:
+        ** RJD to add details of what these parameters actually mean.
+            
+        
+------------------------------------------------------------------------------
+Module: demand.victempdemand
+Class:  VicTempDemand
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+The base class for generic generators that calculate the
+    output and cost based on the full timeseries in one pass. 
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassgenerator
+Class:  SinglePassGeneratorBase
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+The base class for generic generators that calculate the
+    output and cost based on the full timeseries in one pass. 
+    
+---------------------
+None
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  IncrementalVariableGeneratorBasic
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+This is a hack for the GE demo, in advance of a decent system for handling
+    the incremental / multi-decade operation. The model expects twice as many
+    params to what it asked for, and then treats the first set as the total stock
+    in that decade, and the second set as stock added in that decade.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            capex - the cost in $M per MW capacity
+            size - the size in MW of plant for each unit of param
+            type - a string name for the type of generator modelled
+            data_type - a string key for the data required from the master for
+                the set_data method.
+            start_min_param - the minimum starting param value
+            start_max_param - the maximum starting param value
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  VariableGeneratorAsymptCost
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Override the VariableGeneratorBasic calculate method by using a
+    method that has an asymptotic gradient for the capacity cost.
+    
+---------------------
+Config spec as for VariableGeneratorBasic, with the addition of:
+        install: in $M
+        alpha: ?
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  VariableGeneratorBasic
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Implement a basic model for variable generation that uses
+    capacity factor time series to determine output, and calculates
+    cost as a multiple of capacity. Capacity is determined by
+    optimisable parameters.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            capex - the cost in $M per MW capacity
+            size - the size in MW of plant for each unit of param
+            type - a string name for the type of generator modelled
+            data_type - a string key for the data required from the master for
+                the set_data method.
+            start_min_param - the minimum starting param value
+            start_max_param - the maximum starting param value
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  VariableGeneratorExpCost
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Override the VariableGeneratorBasic calculate method by calculating an
+    exponential method capacity cost.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            Same config as VariableGeneratorBasic, with the addition of:
+            ### TODO - not yet fixed
+            install: float, price in $M to build any plant.
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  VariableGeneratorLinearInstall
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Override the VariableGeneratorBasic calculate method by calculating an
+    installation cost as well as capacity cost.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            Same config as VariableGeneratorBasic, with the addition of:
+            install: float, price in $M to build any plant.
+        
+------------------------------------------------------------------------------
+Module: generator.singlepassvariablegenerator
+Class:  VariableGeneratorSqrtCost
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Override the VariableGeneratorBasic calculate method by calculating an
+    square-root method capacity cost.
+            ### TODO - not yet fixed for units
+    
+---------------------
+None
+------------------------------------------------------------------------------
+Module: generator.txmultigeneratorbase
+Class:  TxMultiGeneratorBase
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+An base class for generic generators 
+    that work in a multi-timeperiod
+    system and can work with a transmission model and economic model,
+    with minimal implementation.
+    
+---------------------
+None
+------------------------------------------------------------------------------
+Module: generator.txmultigeneratormultisite
+Class:  TxMultiGeneratorMultiSite
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Module subclassing TxMultiGeneratorBase that provides an implementation of
+    state_handle and related handling functions for multi-site generators. 
+    
+    The 'capacity' term in state_handle is implemented as a dict with one item per site. 
+    Each site item is a list of tuples containing (site_index,build_period,decommissioning_period),
+    describing the set of installed capacity. 
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            time_period_yrs: float - the length of the time period in years
+            time_scale_up_mult: float - the value to multiply non-discounted items,
+                such as carbon emissions, by to account for a shorter dataset than the
+                calculation period length.
+            variable_cost_mult: as for time_scale_up_mult, but may include a factor for
+                cost discounting.
+
+            size: float, optional - relates param to new capacity
+
+            carbon_price_m: float - carbon price in $M/tonne
+
+            startup_data_name: string, optional - the name of the data array that contains
+                data on startup capacities.
+            startup_data_string: string, optional - a python format data array suitable for 
+                input into set_startup_state, all on a single line.
+
+            params_to_site_data_name: string, optional - the name of the data array that
+                contains a list of how the input params list maps to site indices.
+            params_to_site_data_string: list of integers, optional - the site indices, 
+                listed separated by spaces, defining the site index corresponding to 
+                each optimisation param, in order.
+
+            capital_cost: float, default 0 - cost in $M per MW for new capacity.
+            install_cost: float, default 0 - cost in $M per site, when site has an
+                installation from this generator for the first time.
+            decommissioning_cost: float, optional (default 0) - cost in $M per MW for 
+                decommissioning.
+            lifetime_yrs: float, default 20 - the time in years that new capacity lasts
+        
+------------------------------------------------------------------------------
+Module: generator.txmultivariablegenerator
+Class:  TxMultiVariableGeneratorBase
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+A simple implementation of a variable generator, providing 
+    per-unit capital costs.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorBase, plus:
+            
+        tech_type: string - the generic technology type, to report in get_details() as technology.
+        detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+        data_name: string - the name of the data array holding the timeseries capacity factor data, e.g. ts_wind. 
+        data_map_name: string - the name of the data array e.g. ts_wind_map which holds an n x 2 array
+            where n is the number of site indices mapped. The first in each pair is the site index and the second
+            the index into the data table. If this is not provided, a 1:1 is assumed.
+        data_ts_length: the length of the data timeseries, typically provided globally.
+        
+------------------------------------------------------------------------------
+Module: hydro.basicpumpedhydro
+Class:  BasicPumpedHydro
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Class models a simple pumped hydro system that
+       always pumps up when extra supply is available,
+       and always releases when excess demand exists.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            capex: cost in $M per MW of capacity
+            max_gen: max generator capacity, in MW
+            ### TODO - should these be GL water?
+            dam_capacity: dam capacity in ML
+            starting_level: starting level in ML
+            water_factor: translation of MWh to ML - 1 MWh requires water_factor ML water
+            pump_round_trip: efficiency of pump up / draw down operation, a proportion
+            timestep_hrs: float - the system timestep in hours
+            min_param_val: integer - the minimum params value to handle
+            max_param_val: integer - the maximum params value to handle
+        
+------------------------------------------------------------------------------
+Module: hydro.basicpumpedhydro
+Class:  BasicPumpedHydroOptimisable
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Models a variant of BasicPumpedHydro where the maximum electrical capacity
+    is an optimisation parameter.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for BasicPumpedHydro, with the addition of:
+                size: multiplier to translate param to electrical capacity, default 1
+            
+            and with the removal of:
+                max_gen
+        
+------------------------------------------------------------------------------
+Module: hydro.txmultibasicpumpedhydro
+Class:  TxMultiBasicPumpedHydroFixed
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Class models a simple pumped hydro system that always pumps up when extra supply is available,
+    and always releases when excess demand exists. The generator/pump electrical capacity is not
+    optimisable by a param so must be set with a startup value.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration: as for TxMultiGeneratorMultiSite, plus:
+            tech_type: string - the generic technology type, to report in get_details() as technology.
+            detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+            site_index: integer - the index of the site where this pumped hydro is located
+            ### TODO - should these be GL water? what are the units?
+            dam_capacity: dam capacity in ML
+            starting_level: starting level in ML
+            water_factor: translation of MWh to ML - 1 MWh requires water_factor ML water
+            pump_round_trip: efficiency of pump up / draw down operation, a proportion
+            timestep_hrs: float - the system timestep in hours
+        
+------------------------------------------------------------------------------
+Module: hydro.txmultibasicpumpedhydro
+Class:  TxMultiBasicPumpedHydroOptimisable
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Class models a simple pumped hydro system that always pumps up when extra supply is available,
+    and always releases when excess demand exists. The generator/pump electrical capacity is
+    optimisable.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration: as for TxMultiGeneratorMultiSite, plus:
+            tech_type: string - the generic technology type, to report in get_details() as technology.
+            detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+            site_index: integer - the index of the site where this pumped hydro is located
+            ### TODO - should these be GL water? what are the units?
+            dam_capacity: dam capacity in ML
+            starting_level: starting level in ML
+            water_factor: translation of MWh to ML - 1 MWh requires water_factor ML water
+            pump_round_trip: efficiency of pump up / draw down operation, a proportion
+            timestep_hrs: float - the system timestep in hours
+        
+------------------------------------------------------------------------------
+Module: master.gemureilmaster
+Class:  GeMureilMaster
+------------------------------------------------------------------------------
+None
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            data: The name of the configuration file section specifying the data class to use and its
+                configuration parameters. Defaults to 'Data'.
+            global: The name of the configuration file section specifying the global configuration parameters.
+                Defaults to 'Global'.
+
+            dispatch_order: a list of strings specifying the names of the generator models to dispatch, in order,
+                to meet the demand. All of these models then require a parameter defining the configuration file 
+                section where they are configured. e.g. dispatch_order: solar wind gas. This requires additional
+                parameters, for example solar: Solar, wind: Wind and gas: Instant_Gas to be defined, and corresponding
+                sections Solar, Wind and Instant_Gas to configure those models.
+
+            iterations: The number of iterations of the algorithm to execute. Defaults to 100.
+
+            output_file: The filename to write the final output data to. Defaults to 'ge.pkl'.
+            do_plots: Defaults to False. If True, output plots at the end of the run.
+            
+            year_list: A list of years specifying the start year of the periods to run, e.g. 
+                year_list: 2010 2020 2030 2040 2050
+            carbon_price_list: A list of integer carbon prices, matching in length the year_list.
+            discount_rate: The discount rate in percent.
+        
+------------------------------------------------------------------------------
+Module: master.getxmultimaster
+Class:  GeTxMultiMaster
+------------------------------------------------------------------------------
+None
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            data: The name of the configuration file section specifying the data class to use and its
+                configuration parameters. Defaults to 'Data'.
+            transmission: The name of the configuration file section specifying the transmission model class
+                to use and its configuration parameters. Defaults to 'Transmission', and if the 'Transmission'
+                section is not provided, no transmission model will be used.
+            global: The name of the configuration file section specifying the global configuration parameters.
+                Defaults to 'Global'.
+
+            dispatch_order: a list of strings specifying the names of the generator models to dispatch, in order,
+                to meet the demand. All of these models then require a parameter defining the configuration file 
+                section where they are configured. e.g. dispatch_order: solar wind gas. This requires additional
+                parameters, for example solar: Solar, wind: Wind and gas: Instant_Gas to be defined, and corresponding
+                sections Solar, Wind and Instant_Gas to configure those models.
+
+            run_periods: A list of integers specifying the years defining each period in the multi-period
+                simulation. Defaults to 2010. e.g. run_periods: 2010 2020 2030 2040 2050
+            discount_rate: The discount rate in percent.
+
+            output_file: The filename to write the final output data to. Defaults to 'mureil.pkl'.
+            do_plots: Defaults to False. If True, output plots every output_frequency and at the end
+                of the run.
+        
+------------------------------------------------------------------------------
+Module: master.simplemureilmaster
+Class:  SimpleMureilMaster
+------------------------------------------------------------------------------
+None
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            algorithm: The name of the configuration file section specifying the algorithm class to use and
+                its configuration parameters. Defaults to 'Algorithm'.
+            data: The name of the configuration file section specifying the data class to use and its
+                configuration parameters. Defaults to 'Data'.
+            global: The name of the configuration file section specifying the global configuration parameters.
+                Defaults to 'Global'.
+
+            dispatch_order: a list of strings specifying the names of the generator models to dispatch, in order,
+                to meet the demand. All of these models then require a parameter defining the configuration file 
+                section where they are configured. e.g. dispatch_order: solar wind gas. This requires additional
+                parameters, for example solar: Solar, wind: Wind and gas: Instant_Gas to be defined, and corresponding
+                sections Solar, Wind and Instant_Gas to configure those models.
+
+            iterations: The number of iterations of the algorithm to execute. Defaults to 100.
+
+            output_file: The filename to write the final output data to. Defaults to 'mureil.pkl'.
+            output_frequency: Defaults to 500. After the first iteration and every output_frequency after
+                that, report on the simulation status.
+            do_plots: Defaults to False. If True, output plots every output_frequency and at the end
+                of the run.
+
+            optim_type: Defaults to 'missed_supply'. Either 'missed_supply' or 'match_demand'. 
+                'match_demand' is a legacy case that may not be maintained. 
+        
+------------------------------------------------------------------------------
+Module: master.txmultimastersimple
+Class:  TxMultiMasterSimple
+------------------------------------------------------------------------------
+None
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            algorithm: The name of the configuration file section specifying the algorithm class to use and
+                its configuration parameters. Defaults to 'Algorithm'.
+            data: The name of the configuration file section specifying the data class to use and its
+                configuration parameters. Defaults to 'Data'.
+            transmission: The name of the configuration file section specifying the transmission model class
+                to use and its configuration parameters. Defaults to 'Transmission', and if the 'Transmission'
+                section is not provided, no transmission model will be used.
+            global: The name of the configuration file section specifying the global configuration parameters.
+                Defaults to 'Global'.
+
+            dispatch_order: a list of strings specifying the names of the generator models to dispatch, in order,
+                to meet the demand. All of these models then require a parameter defining the configuration file 
+                section where they are configured. e.g. dispatch_order: solar wind gas. This requires additional
+                parameters, for example solar: Solar, wind: Wind and gas: Instant_Gas to be defined, and corresponding
+                sections Solar, Wind and Instant_Gas to configure those models.
+
+            run_periods: A list of integers specifying the years defining each period in the multi-period
+                simulation. Defaults to 2010. e.g. run_periods: 2010 2020 2030 2040 2050
+
+            iterations: The number of iterations of the algorithm to execute. Defaults to 100.
+
+            output_file: The filename to write the final output data to. Defaults to 'mureil.pkl'.
+            output_frequency: Defaults to 500. After the first iteration and every output_frequency after
+                that, report on the simulation status.
+            do_plots: Defaults to False. If True, output plots every output_frequency and at the end
+                of the run.
+        
+------------------------------------------------------------------------------
+Module: missed_supply.missedsupply
+Class:  CappedMissedSupply
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Missed supply model charging a flat rate per
+    MWh missed, and a penalty for going over a total limit.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Config:
+            cost_per_mwh: float - the cost in $ per MWh of missed supply
+            reliability_reqt: float - a percentage of total demand that can be
+                missed before the penalty applies.
+            penalty: float - in $M, the penalty if reliability is not met.
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+        
+------------------------------------------------------------------------------
+Module: missed_supply.missedsupply
+Class:  LinearMissedSupply
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Missed supply model charging a flat rate per
+    MWh missed.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Config:
+            cost_per_mwh: float - the cost in $ per MWh of missed supply
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+        
+------------------------------------------------------------------------------
+Module: missed_supply.missedsupply
+Class:  TimestepReliabilityMissedSupply
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+Missed supply model charging a flat rate per
+    MWh missed.  Reliability reported as a percentage of timesteps.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Config:
+            cost_per_mwh: float - the cost in $ per MWh of missed supply
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+        
+------------------------------------------------------------------------------
+Module: missed_supply.txmultimissedsupply
+Class:  TxMultiCappedMissedSupply
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Missed supply model charging a flat price per MWh missed, plus a
+    penalty if an unreliability limit is breached. Note that this model requests a
+    data timeseries for ts_demand, which is currently only available as a loaded data
+    timeseries, not the output of a demand generation model.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for TxMultiLinearMissedSupply, plus:
+
+        reliability_reqt: float - a percentage of total demand that can be
+            missed before the penalty applies.
+        penalty: float - in $M, the penalty if reliability is not met.
+        
+------------------------------------------------------------------------------
+Module: missed_supply.txmultimissedsupply
+Class:  TxMultiLinearMissedSupply
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+Missed supply model charging a flat price per MWh missed.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorBase, plus:
+
+        cost_per_mwh: float - the cost in $ per MWh of missed supply
+        timestep_hrs: float - the system timestep in hours
+        variable_cost_mult: float - the value to multiply by to account for a shorter
+            dataset than the calculation period length. It may include a factor for
+            cost discounting.
+
+        
+------------------------------------------------------------------------------
+Module: test_regression.rhuva_test1.rhuva_data1
+Class:  Data
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: thermal.instantthermal
+Class:  IncrementalInstantOptimisableThermal
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+This is a hack for the GE demo, in advance of a decent system for handling
+    the incremental / multi-decade operation. The model expects twice as many
+    params to what it asked for, and then treats the first set as the total stock
+    in that decade, and the second set as stock added in that decade.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            capex: float - Cost in $M per MW of capacity installed
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price: float - Cost in $ per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+            size - the size in MW of plant for each unit of param
+        
+------------------------------------------------------------------------------
+Module: thermal.instantthermal
+Class:  InstantMaxThermal
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A fossil thermal generator, that instantly matches demand,
+    and determines maximum size required.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            capex: float - Cost in $M per MW of capacity installed
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price: float - Cost in $ per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+        
+------------------------------------------------------------------------------
+Module: thermal.instantthermal
+Class:  InstantOptimisableThermal
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A fossil thermal generator, that instantly matches demand,
+    with capacity determined by the optimiser.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            capex: float - Cost in $M per MW of capacity installed
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price: float - Cost in $ per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+            size - the size in MW of plant for each unit of param
+        
+------------------------------------------------------------------------------
+Module: thermal.slowresponsethermal
+Class:  SlowResponseThermal
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A slow-response thermal generator that looks at the timeseries to
+    determine when to turn on. Optimisable capacity.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            capex: float - Cost in $M per MW of capacity installed
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price: float - Cost in $ per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+            ramp_time_mins: float - the ramp-time to full power. Model will linearly
+                ramp to this.
+            size - the size in MW of plant for each unit of param
+        
+------------------------------------------------------------------------------
+Module: thermal.slowresponsethermal
+Class:  SlowResponseThermalFixed
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A slow-response thermal generator that looks at the timeseries to
+    determine when to turn on. Capacity is fixed at fixed_capacity.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            as for SlowResponseThermal, with the addition of:
+            fixed_capacity: MW of capacity installed
+        
+------------------------------------------------------------------------------
+Module: thermal.slowresponsethermal_beta
+Class:  SlowResponseThermal
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A slow-response thermal generator that looks at the timeseries to
+    determine when to turn on. Optimisable capacity.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            capex: float - Cost in $M per MW of capacity installed
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price: float - Cost in $ per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            variable_cost_mult: float - the value to multiply the calculated variable
+                cost by, to account for a shorter dataset than the capex lifetime.
+            ramp_time_mins: float - the ramp-time to full power. Model will linearly
+                ramp to this.
+            size - the size in MW of plant for each unit of param
+        
+------------------------------------------------------------------------------
+Module: thermal.slowresponsethermal_beta
+Class:  SlowResponseThermalFixed
+Implements: SinglePassGeneratorBase
+------------------------------------------------------------------------------
+A slow-response thermal generator that looks at the timeseries to
+    determine when to turn on. Capacity is fixed at fixed_capacity.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+        
+        Configuration:
+            as for SlowResponseThermal, with the addition of:
+            fixed_capacity: MW of capacity installed
+        
+------------------------------------------------------------------------------
+Module: thermal.txmultiinstantthermal
+Class:  TxMultiInstantFixedThermal
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+An instant-output thermal generator, that can be set up with
+    startup data but which does not take an optimisable param for
+    capacity increase. This implementation handles only one site.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorMultiSite, plus:
+            
+        tech_type: string - the generic technology type, to report in get_details() as technology.
+        detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+        site_index: integer - the index of the site where this instant thermal is located
+        fuel_price_mwh: float - Cost in $ per MWh generated
+        carbon_price_m: float - Cost in $M per Tonne
+        carbon_intensity: float - in kg/kWh or equivalently T/MWh
+        timestep_hrs: float - the system timestep in hours
+        
+------------------------------------------------------------------------------
+Module: thermal.txmultiinstantthermal
+Class:  TxMultiInstantMaxThermal
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+A simple implementation of an instant-output thermal generator, such
+    as a peaking gas turbine, is built as big as necessary. This
+    implementation handles only one site.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorMultiSite, plus:
+            
+        tech_type: string - the generic technology type, to report in get_details() as technology.
+        detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+        site_index: integer - the index of the site where this instant thermal is located
+        fuel_price_mwh: float - Cost in $ per MWh generated
+        carbon_price_m: float - Cost in $M per Tonne
+        carbon_intensity: float - in kg/kWh or equivalently T/MWh
+        timestep_hrs: float - the system timestep in hours
+        
+------------------------------------------------------------------------------
+Module: thermal.txmultiinstantthermal
+Class:  TxMultiInstantOptimisableThermal
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+A simple implementation of an instant-output thermal generator, such
+    as a peaking gas turbine, which requires an optimisation parameter. This
+    implementation handles only one site.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorMultiSite, plus:
+            
+        tech_type: string - the generic technology type, to report in get_details() as technology.
+        detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+        site_index: integer - the index of the site where this instant thermal is located
+        fuel_price_mwh: float - Cost in $ per MWh generated
+        carbon_price_m: float - Cost in $M per Tonne
+        carbon_intensity: float - in kg/kWh or equivalently T/MWh
+        timestep_hrs: float - the system timestep in hours
+        
+------------------------------------------------------------------------------
+Module: thermal.txmultislowthermal
+Class:  TxMultiSlowFixedThermal
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+A slow-response thermal generator, that can be set up with
+    startup data but which does not take an optimisable param for
+    capacity increase. This implementation handles only one site.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorMultiSite, plus:
+            
+            tech_type: string - the generic technology type, to report in get_details() as technology.
+            detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+            site_index: integer - the index of the site where this instant thermal is located
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price_m: float - Cost in $M per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            ramp_time_mins: float - the ramp-time to full power. Model will linearly
+                ramp to this.
+        
+------------------------------------------------------------------------------
+Module: thermal.txmultislowthermal
+Class:  TxMultiSlowOptimisableThermal
+Implements: TxMultiGeneratorBase
+------------------------------------------------------------------------------
+A simple implementation of an instant-output thermal generator, such
+    as a peaking gas turbine, which requires an optimisation parameter. This
+    implementation handles only one site.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            as for txmultigenerator.TxMultiGeneratorMultiSite, plus:
+            
+            tech_type: string - the generic technology type, to report in get_details() as technology.
+            detail_type: string - a specific name, e.g. 'onshore_wind_vic', for printing in an output string
+            site_index: integer - the index of the site where this instant thermal is located
+            fuel_price_mwh: float - Cost in $ per MWh generated
+            carbon_price_m: float - Cost in $M per Tonne
+            carbon_intensity: float - in kg/kWh or equivalently T/MWh
+            timestep_hrs: float - the system timestep in hours
+            ramp_time_mins: float - the ramp-time to full power. Model will linearly
+                ramp to this.
+        
+------------------------------------------------------------------------------
+Module: tools.configurablebase
+Class:  ConfigurableBase
+------------------------------------------------------------------------------
+None
+---------------------
+None
+------------------------------------------------------------------------------
+Module: tools.configurablebase
+Class:  ConfigurableMultiBase
+------------------------------------------------------------------------------
+ConfigurableMultiBase subclasses the ConfigurableBase class to add
+    functionality to handle multiple time periods.
+    
+---------------------
+None
+------------------------------------------------------------------------------
+Module: tools.globalconfig
+Class:  GlobalBase
+------------------------------------------------------------------------------
+GlobalBase implements the following calculations on the 
+    global data:
+    
+    - Converts timestep_mins to timestep_hrs and vice-versa. 
+      timestep_mins takes priority if both specified. 
+      These parameters must have a scalar, not multi-period value.
+      
+    - Calculates carbon_price_m from carbon_price by multiplying by 1e-6, 
+      for the use of models that require the carbon price in $M/tonne 
+      instead of the specified $/tonne.
+      
+    - Using the parameters time_period_yrs, timestep_hrs and data_ts_length 
+      (where data_ts_length is set by the master once it has loaded the data timeseries), 
+      calculates the parameter time_scale_up_mult that relates the time represented 
+      by the timeseries to the simulation time period. 
+      
+    - Calculates the parameter variable_cost_mult which is similar to time_scale_up_mult, 
+      but could be (when implemented) configured with a discount rate parameter to account 
+      for the time value of money across the time period.
+    
+---------------------
+Get the spec for global variables that need conversion prior
+        to calculating with them. All of these are considered
+        optional. The docstring for this class lists the calculations done
+        on these.
+        
+        Additional configuration values may be provided to the GlobalBase model without
+        warnings being raised, and these will be available for other models in the simulation.
+        
+        Configuration:
+            timestep_mins: float - system timestep in minutes
+            timestep_hrs: float - system timestep in hours
+            time_period_yrs: float - length of time period being modelled
+            min_param_val: int - minimum param value output from algorithm
+            max_param_val: int - maximum param value output from algorithm
+            time_scale_up_mult: float - the value to multiply non-discounted items,
+                such as carbon emissions, by to account for a shorter dataset than the
+                calculation period length.
+            variable_cost_mult: as for time_scale_up_mult, but may include a factor for
+                cost discounting.
+            data_ts_length: the length of the timeseries being simulated, in samples. Typically
+                this is determined by the master.
+            carbon_price: float - the carbon price in $/tonne.
+        
+------------------------------------------------------------------------------
+Module: transmission.distancetxmodel
+Class:  DistanceTxModel
+------------------------------------------------------------------------------
+Model a transmission system by simply adding up the cost of
+    connecting the active generation sites to the nearest trunk line.
+    
+---------------------
+Return a list of tuples of format (name, conversion function, default),
+        e.g. ('capex', float, 2.0). Put None if no conversion required, or if no
+        default value, e.g. ('name', None, None)
+
+        Configuration:
+            site_to_distance_map_name: The name of the data series that represents the
+                map between the site index and the distance in km. The data series is a
+                n by 2 array [[site_index, distance]]
+            cost_per_km: The cost in $M per km of distance to nearest trunk line.
+        

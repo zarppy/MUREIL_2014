@@ -1,0 +1,95 @@
+# Configuration for GE demo
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+iterations: 50
+algorithm: Algorithm
+global: Global
+solar: Solar
+wind: Wind
+# Coal_instant here uses an instant switch-on coal plant, as
+# the slow-response model is not finished.
+coal: Coal_instant
+gas: Gas
+demand: Demand
+missed_supply: MissedSupply
+data: Data
+# The 'demand' is dispatched first as it sets the total demand
+dispatch_order: demand solar wind coal gas missed_supply
+do_plots: False
+#year_list: 2010 2020 2030 2040 2050
+#carbon_price_list: 25 45 65 100 200
+#discount_rate: 5
+do_plots: False
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 50
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+time_period_yrs: 10
+carbon_price: 25
+
+[Demand]
+model: demand.victempdemand.VicTempDemand
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorBasic
+capex: 2.0
+size: 1
+type: Solar
+data_type: ts_solar
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorBasic
+capex: 1.2
+size: 1
+type: Wind
+data_type: ts_wind
+
+[Gas]
+model: thermal.instantthermal.InstantOptimisableThermal
+capex: 1.0
+fuel_price_mwh: 30
+carbon_intensity: 0.6
+# size = 1 is important so that capacity value translates from web input
+size: 1
+
+[Coal]
+model: thermal.slowresponsethermal.SlowResponseThermal
+capex: 2.0
+fuel_price_mwh: 10
+carbon_intensity: 1.0
+type: coal
+# size = 1 is important so that capacity value translates from web input
+size: 1
+ramp_time_mins: 0
+
+[Coal_instant]
+model: thermal.instantthermal.InstantOptimisableThermal
+capex: 2.0
+fuel_price_mwh: 10
+carbon_intensity: 1.0
+# size = 1 is important so that capacity value translates from web input
+size: 1
+
+[MissedSupply]
+# Use this timestep-reliability missed supply, as the capped missed
+# supply requires a total demand figure to calculate from, but this
+# is not clear with the demand shaping.
+model: missed_supply.missedsupply.TimestepReliabilityMissedSupply
+cost_per_mwh: 12000
+
+[Data]
+# This data set provides only a single location, a simplification
+# at this time, to match what the Master does with the location data.
+model: data.sample_ge_data.Data

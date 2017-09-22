@@ -1,0 +1,75 @@
+CRITICAL : Run started at Sat Aug 10 20:58:40 2013
+DEBUG    : average score before: -581650.177580
+DEBUG    : b_score = -168797.848000
+DEBUG    : iteration: 0
+INFO     : Interim results at iteration 0
+INFO     : best gene was: [138, 1136, 5140, 7913, 3410, 3193]
+INFO     : on loop 0, with score -168797.848000
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -470148.271600
+INFO     : missed_supply ($M 0.00) : Capped Missed-Supply, total 0.00 MW-timestamps missed, unreliability 0.000%
+INFO     : fossil ($M 38129.85) : Instant Fossil Thermal, max capacity (MW) 17106.53
+INFO     : wind ($M 60968.00) : Wind with capacities (MW): 12850.00  19782.50  8525.00  7982.50 
+INFO     : solar ($M 65700.00) : Solar_Thermal with capacities (MW): 6900.00  56800.00 
+INFO     : hydro ($M 4000.00) : Basic Pumped Hydro, maximum generation capacity (MW) 2000.00
+INFO     : Total cost ($M): 168797.85
+DEBUG    : b_score = -165426.228000
+DEBUG    : iteration: 1
+DEBUG    : b_score = -165426.228000
+DEBUG    : iteration: 2
+DEBUG    : b_score = -165426.228000
+DEBUG    : iteration: 3
+DEBUG    : b_score = -122648.237000
+DEBUG    : iteration: 4
+DEBUG    : b_score = -122648.237000
+DEBUG    : iteration: 5
+DEBUG    : b_score = -122648.237000
+DEBUG    : iteration: 6
+DEBUG    : b_score = -122648.237000
+DEBUG    : iteration: 7
+DEBUG    : b_score = -122648.237000
+DEBUG    : iteration: 8
+DEBUG    : b_score = -123531.736000
+DEBUG    : iteration: 9
+DEBUG    : b_score = -121873.656000
+DEBUG    : iteration: 10
+DEBUG    : b_score = -121873.656000
+DEBUG    : iteration: 11
+DEBUG    : b_score = -121873.656000
+DEBUG    : iteration: 12
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 13
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 14
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 15
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 16
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 17
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 18
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 19
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 20
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 21
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 22
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 23
+DEBUG    : b_score = -120923.720000
+DEBUG    : iteration: 24
+CRITICAL : Run time: 5.14 seconds
+INFO     : best gene was: [138, 281, 588, 5699, 7817, 7190]
+INFO     : on loop 13, with score -120923.720000
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -121064.430460
+INFO     : missed_supply ($M 0.00) : Capped Missed-Supply, total 0.00 MW-timestamps missed, unreliability 0.000%
+INFO     : fossil ($M 28091.72) : Instant Fossil Thermal, max capacity (MW) 14362.00
+INFO     : wind ($M 65882.00) : Wind with capacities (MW): 1470.00  14247.50  19542.50  17975.00 
+INFO     : solar ($M 22950.00) : Solar_Thermal with capacities (MW): 6900.00  14050.00 
+INFO     : hydro ($M 4000.00) : Basic Pumped Hydro, maximum generation capacity (MW) 2000.00
+INFO     : Total cost ($M): 120923.72
+DEBUG    : Finalising geneticalgorithm

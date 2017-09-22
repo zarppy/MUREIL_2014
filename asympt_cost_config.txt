@@ -1,0 +1,74 @@
+# Sample MUREIL configuration
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+optim_type: missed_supply
+iterations: 10000
+output_file: asympt_config_full_II.pkl
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+hydro: Hydro
+fossil: Fossil
+missed_supply: MissedSupply
+data: Data
+global: Global
+dispatch_order: solar wind hydro fossil
+#dispatch_order: solar wind hydro fossil missed_supply
+
+[Global]
+min_param_val: -2000
+max_param_val: 8000
+timestep_mins: 60
+time_period_yrs: 20
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.001
+gene_mute: 0.1
+pop_size: 100
+mort: 0.5
+nuke_power: 20
+processes: 3
+seed: 463647
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorAsymptCost
+capex: 1.0
+size: 50
+install: 500
+type: Solar_Thermal
+data_type: ts_solar
+alpha: 5.0
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorAsymptCost
+capex: 1.2
+size: 2.5
+install: 70
+type: Wind
+data_type: ts_wind
+alpha: 1.8
+
+[Hydro]
+model: hydro.basicpumpedhydro.BasicPumpedHydro
+capex: 2.0
+max_gen: 5000
+dam_capacity: 10000
+starting_level: 5000
+water_factor: 0.01
+pump_round_trip: 0.8
+
+[Fossil]
+model: thermal.instantthermal.InstantMaxThermal
+capex: 1.0
+fuel_price_mwh: 25
+carbon_price: 83.333333
+carbon_intensity: 1.0
+
+[MissedSupply]
+model: missed_supply.missedsupply.LinearMissedSupply
+cost_per_mwh: 0.005
+
+[Data]
+model: data.rhuva_data_dist.Data

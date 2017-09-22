@@ -1,0 +1,86 @@
+# MUREIL configuration to match assignment 5 of
+# Renewable Energy in 2012
+
+[Master]
+model: master.txmultimastersimple.TxMultiMasterSimple
+global: Global
+iterations: 100
+output_file: asst5.pkl
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+fossil: Fossil
+legacy_coal: BrownCoal
+missed_supply: Missed_Supply
+data: Data
+dispatch_order: solar wind legacy_coal fossil missed_supply
+run_periods: 2010 2020 2030 2040 2050
+#run_periods: 2010
+#do_plots: True
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+time_period_yrs: 10
+carbon_price: {2010: 25, 2020: 50, 2030: 75, 2040: 100, 2050:150}
+#variable_cost_mult: 240
+#time_scale_up_mult: 240
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 50
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Solar]
+model: generator.txmultivariablegenerator.TxMultiVariableGeneratorBase
+capital_cost: 1.0
+size: 10
+detail_type: Solar_Thermal
+data_name: ts_solar
+lifetime_yrs: 20
+params_to_site_data_string: 88 77
+start_min_param: 100
+start_max_param: 150
+
+[Wind]
+model: generator.txmultivariablegenerator.TxMultiVariableGeneratorBase
+capital_cost: 2.0
+size: 10
+detail_type: Wind
+data_name: ts_wind
+lifetime_yrs: 20
+data_map_name: ts_wind_map
+params_to_site_data_string: 22 33 44
+startup_data_string: [[55, 100, 2000, 2030]]
+startup_data_name: ts_wind_startup
+
+[Fossil]
+model: thermal.txmultiinstantthermal.TxMultiInstantMaxThermal
+size: 10
+capital_cost: 3.5
+# fuel price and carbon price are $ per MWh of generation here
+# the asst5 spreadsheet forgot to calculate the fuel cost.
+fuel_price_mwh: 0
+carbon_intensity: 0.9
+lifetime_yrs: 30
+
+[BrownCoal]
+model: thermal.txmultislowthermal.TxMultiSlowFixedThermal
+fuel_price_mwh: 5
+carbon_intensity: 1.3
+site_index: 99
+startup_data_string: [[99, 2000, 1950, 2010]]
+ramp_time_mins: 480
+
+[Missed_Supply]
+model: missed_supply.txmultimissedsupply.TxMultiLinearMissedSupply
+cost_per_mwh: 10000000
+
+[Data]
+model: data.mg_sample_data.Data

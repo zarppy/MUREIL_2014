@@ -1,0 +1,7 @@
+site_index, node_name, connection_cost
+1001,SEQ,0.1
+1002,NNSW,0.2
+1003,CAN,0.3
+1004,ADE,0.4
+2001,LV,0
+2002,LV,0

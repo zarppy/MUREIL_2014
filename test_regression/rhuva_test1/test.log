@@ -1,0 +1,225 @@
+CRITICAL : Run started at Sat Aug 10 21:00:18 2013
+DEBUG    : average score before: -2794669.935674
+DEBUG    : b_score = -1801367.000000
+DEBUG    : iteration: 0
+INFO     : Interim results at iteration 0
+INFO     : best gene was: [3724, 3293, 6966, 731, 89, 1719, 5682, 3537, 761, 2860, 2648, 7271, 7135, 200, 8351, 1067, 3997, 4237, 298, 1078, 7418, 6882, 7889, 9690, 8885, 3007, 6570, 6595, 2273, 7598]
+INFO     : on loop 0, with score -1801367.000000
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -2597336.590188
+INFO     : missed_supply ($M 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed
+INFO     : fossil ($M 0.00) : Instant Fossil Thermal, max capacity (MW) 0.00
+INFO     : wind ($M 319267.00) : Wind with capacities (MW): 2.65  7.27  7.13  0.20  8.35  1.07  4.00  4.24  0.30  1.08  7.42  6.88  7.89  9.69  8.88  3.01  6.57  6.59  2.27  7.60 
+INFO     : solar ($M 1478100.00) : Solar_Thermal with capacities (MW): 186200.00  164650.00  348300.00  36550.00  4450.00  85950.00  284100.00  176850.00  38050.00  143000.00 
+INFO     : hydro ($M 4000.00) : Basic Pumped Hydro, maximum generation capacity (MW) 2000.00
+INFO     : Total cost ($M): 1801367.00
+DEBUG    : b_score = -1713462.798430
+DEBUG    : iteration: 1
+DEBUG    : b_score = -1533109.737401
+DEBUG    : iteration: 2
+DEBUG    : b_score = -1484872.725563
+DEBUG    : iteration: 3
+DEBUG    : b_score = -1480455.831130
+DEBUG    : iteration: 4
+DEBUG    : b_score = -1064420.561718
+DEBUG    : iteration: 5
+DEBUG    : b_score = -998504.454043
+DEBUG    : iteration: 6
+DEBUG    : b_score = -998504.454043
+DEBUG    : iteration: 7
+DEBUG    : b_score = -917813.000000
+DEBUG    : iteration: 8
+DEBUG    : b_score = -913223.489251
+DEBUG    : iteration: 9
+DEBUG    : b_score = -829789.308245
+DEBUG    : iteration: 10
+DEBUG    : b_score = -723378.864346
+DEBUG    : iteration: 11
+DEBUG    : b_score = -718656.555115
+DEBUG    : iteration: 12
+DEBUG    : b_score = -565024.367757
+DEBUG    : iteration: 13
+DEBUG    : b_score = -545605.509903
+DEBUG    : iteration: 14
+DEBUG    : b_score = -545605.509903
+DEBUG    : iteration: 15
+DEBUG    : b_score = -545605.509903
+DEBUG    : iteration: 16
+DEBUG    : b_score = -545605.509903
+DEBUG    : iteration: 17
+DEBUG    : b_score = -522900.766123
+DEBUG    : iteration: 18
+DEBUG    : b_score = -524268.387815
+DEBUG    : iteration: 19
+DEBUG    : b_score = -513085.169349
+DEBUG    : iteration: 20
+DEBUG    : b_score = -507706.707532
+DEBUG    : iteration: 21
+DEBUG    : b_score = -438087.430826
+DEBUG    : iteration: 22
+DEBUG    : b_score = -454515.829081
+DEBUG    : iteration: 23
+DEBUG    : b_score = -419672.368208
+DEBUG    : iteration: 24
+DEBUG    : b_score = -409175.100181
+DEBUG    : iteration: 25
+DEBUG    : b_score = -383857.144352
+DEBUG    : iteration: 26
+DEBUG    : b_score = -383857.144352
+DEBUG    : iteration: 27
+DEBUG    : b_score = -373872.948099
+DEBUG    : iteration: 28
+DEBUG    : b_score = -373872.948099
+DEBUG    : iteration: 29
+DEBUG    : b_score = -370042.122693
+DEBUG    : iteration: 30
+DEBUG    : b_score = -370042.122693
+DEBUG    : iteration: 31
+DEBUG    : b_score = -363151.691734
+DEBUG    : iteration: 32
+DEBUG    : b_score = -359030.530159
+DEBUG    : iteration: 33
+DEBUG    : b_score = -359030.530159
+DEBUG    : iteration: 34
+DEBUG    : b_score = -350616.361757
+DEBUG    : iteration: 35
+DEBUG    : b_score = -342568.809442
+DEBUG    : iteration: 36
+DEBUG    : b_score = -342568.809442
+DEBUG    : iteration: 37
+DEBUG    : b_score = -342568.809442
+DEBUG    : iteration: 38
+DEBUG    : b_score = -337600.489710
+DEBUG    : iteration: 39
+DEBUG    : b_score = -335144.591203
+DEBUG    : iteration: 40
+DEBUG    : b_score = -334391.069155
+DEBUG    : iteration: 41
+DEBUG    : b_score = -334008.033340
+DEBUG    : iteration: 42
+DEBUG    : b_score = -327012.787069
+DEBUG    : iteration: 43
+DEBUG    : b_score = -327012.787069
+DEBUG    : iteration: 44
+DEBUG    : b_score = -327012.787069
+DEBUG    : iteration: 45
+DEBUG    : b_score = -327012.787069
+DEBUG    : iteration: 46
+DEBUG    : b_score = -326428.264599
+DEBUG    : iteration: 47
+DEBUG    : b_score = -324450.215756
+DEBUG    : iteration: 48
+DEBUG    : b_score = -322257.549061
+DEBUG    : iteration: 49
+DEBUG    : b_score = -321845.709161
+DEBUG    : iteration: 50
+DEBUG    : b_score = -308700.799651
+DEBUG    : iteration: 51
+DEBUG    : b_score = -308700.799651
+DEBUG    : iteration: 52
+DEBUG    : b_score = -308700.799651
+DEBUG    : iteration: 53
+DEBUG    : b_score = -318289.134075
+DEBUG    : iteration: 54
+DEBUG    : b_score = -316724.808969
+DEBUG    : iteration: 55
+DEBUG    : b_score = -316724.808969
+DEBUG    : iteration: 56
+DEBUG    : b_score = -309305.479448
+DEBUG    : iteration: 57
+DEBUG    : b_score = -305701.841476
+DEBUG    : iteration: 58
+DEBUG    : b_score = -305701.841476
+DEBUG    : iteration: 59
+DEBUG    : b_score = -296570.126681
+DEBUG    : iteration: 60
+DEBUG    : b_score = -294988.716370
+DEBUG    : iteration: 61
+DEBUG    : b_score = -294988.716370
+DEBUG    : iteration: 62
+DEBUG    : b_score = -295041.828386
+DEBUG    : iteration: 63
+DEBUG    : b_score = -280216.710772
+DEBUG    : iteration: 64
+DEBUG    : b_score = -280216.710772
+DEBUG    : iteration: 65
+DEBUG    : b_score = -275844.518624
+DEBUG    : iteration: 66
+DEBUG    : b_score = -270491.866189
+DEBUG    : iteration: 67
+DEBUG    : b_score = -272083.763096
+DEBUG    : iteration: 68
+DEBUG    : b_score = -272083.763096
+DEBUG    : iteration: 69
+DEBUG    : b_score = -270850.882671
+DEBUG    : iteration: 70
+DEBUG    : b_score = -269684.235666
+DEBUG    : iteration: 71
+DEBUG    : b_score = -270491.866189
+DEBUG    : iteration: 72
+DEBUG    : b_score = -269926.379751
+DEBUG    : iteration: 73
+DEBUG    : b_score = -269373.474680
+DEBUG    : iteration: 74
+DEBUG    : b_score = -269373.474680
+DEBUG    : iteration: 75
+DEBUG    : b_score = -266773.903682
+DEBUG    : iteration: 76
+DEBUG    : b_score = -263859.002954
+DEBUG    : iteration: 77
+DEBUG    : b_score = -261235.166715
+DEBUG    : iteration: 78
+DEBUG    : b_score = -261235.166715
+DEBUG    : iteration: 79
+DEBUG    : b_score = -260057.901387
+DEBUG    : iteration: 80
+DEBUG    : b_score = -259052.511849
+DEBUG    : iteration: 81
+DEBUG    : b_score = -254533.554497
+DEBUG    : iteration: 82
+DEBUG    : b_score = -256283.172221
+DEBUG    : iteration: 83
+DEBUG    : b_score = -242609.827427
+DEBUG    : iteration: 84
+DEBUG    : b_score = -242609.827427
+DEBUG    : iteration: 85
+DEBUG    : b_score = -242609.827427
+DEBUG    : iteration: 86
+DEBUG    : b_score = -236677.149477
+DEBUG    : iteration: 87
+DEBUG    : b_score = -236651.196241
+DEBUG    : iteration: 88
+DEBUG    : b_score = -236651.196241
+DEBUG    : iteration: 89
+DEBUG    : b_score = -235948.476276
+DEBUG    : iteration: 90
+DEBUG    : b_score = -235073.237972
+DEBUG    : iteration: 91
+DEBUG    : b_score = -233950.533257
+DEBUG    : iteration: 92
+DEBUG    : b_score = -235073.237972
+DEBUG    : iteration: 93
+DEBUG    : b_score = -235073.237972
+DEBUG    : iteration: 94
+DEBUG    : b_score = -233651.900004
+DEBUG    : iteration: 95
+DEBUG    : b_score = -232548.048442
+DEBUG    : iteration: 96
+DEBUG    : b_score = -232620.357098
+DEBUG    : iteration: 97
+DEBUG    : b_score = -232191.556226
+DEBUG    : iteration: 98
+DEBUG    : b_score = -232514.067295
+DEBUG    : iteration: 99
+CRITICAL : Run time: 61.52 seconds
+INFO     : best gene was: [119, 95, 18, 226, 89, 133, 271, 242, 275, 147, 13, 223, 552, 366, 108, 4129, 459, 9, 2914, 13, 2245, 1728, 3438, 4490, 4606, 614, 2848, 797, 834, 375]
+INFO     : on loop 98, with score -232191.556226
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -247073.506097
+INFO     : missed_supply ($M 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed
+INFO     : fossil ($M 35158.56) : Instant Fossil Thermal, max capacity (MW) 12121.66
+INFO     : wind ($M 102283.00) : Wind with capacities (MW): 0.01  0.22  0.55  0.37  0.11  4.13  0.46  0.01  2.91  0.01  2.25  1.73  3.44  4.49  4.61  0.61  2.85  0.80  0.83  0.38 
+INFO     : solar ($M 90750.00) : Solar_Thermal with capacities (MW): 5950.00  4750.00  900.00  11300.00  4450.00  6650.00  13550.00  12100.00  13750.00  7350.00 
+INFO     : hydro ($M 4000.00) : Basic Pumped Hydro, maximum generation capacity (MW) 2000.00
+INFO     : Total cost ($M): 232191.56
+DEBUG    : Finalising geneticalgorithm

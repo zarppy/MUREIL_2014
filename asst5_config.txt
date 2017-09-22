@@ -1,0 +1,58 @@
+# MUREIL configuration to match assignment 5 of
+# Renewable Energy in 2012
+
+[Master]
+model: master.simplemureilmaster.SimpleMureilMaster
+global: Global
+iterations: 1000
+output_file: asst5.pkl
+algorithm: Algorithm
+solar: Solar
+wind: Wind
+fossil: Fossil
+data: Data
+dispatch_order: solar wind fossil
+do_plots: False
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+#time_period_yrs: 20
+variable_cost_mult: 240
+
+[Algorithm]
+model: algorithm.geneticalgorithm.Engine
+base_mute: 0.01
+gene_mute: 0.1
+pop_size: 50
+mort: 0.5
+nuke_power: 20
+processes: 0
+seed: 12345
+
+[Solar]
+model: generator.singlepassvariablegenerator.VariableGeneratorBasic
+capex: 1.0
+size: 10
+type: Solar_Thermal
+data_type: ts_solar
+
+[Wind]
+model: generator.singlepassvariablegenerator.VariableGeneratorBasic
+capex: 2.0
+size: 10
+type: Wind
+data_type: ts_wind
+
+[Fossil]
+model: thermal.instantthermal.InstantMaxThermal
+capex: 3.5
+# fuel price and carbon price are $ per MWh of generation here
+# the asst5 spreadsheet forgot to calculate the fuel cost.
+fuel_price_mwh: 0
+carbon_price: 100
+carbon_intensity: 0.9
+
+[Data]
+model: data.mg_sample_data.Data

@@ -1,0 +1,81 @@
+# Configuration for GE demo
+
+[Master]
+model: master.getxmultimaster.GeTxMultiMaster
+global: Global
+solar: Solar
+wind: Wind
+# Coal_instant here uses an instant switch-on coal plant, as
+# the slow-response model is not finished.
+coal: Coal_instant
+gas: Gas
+demand: Demand
+missed_supply: MissedSupply
+data: Data
+# The 'demand' is dispatched first as it sets the total demand
+dispatch_order: demand solar wind coal gas missed_supply
+do_plots: False
+run_periods: 2010 2020 2030 2040 2050
+discount_rate: 5
+
+[Global]
+min_param_val: 0
+max_param_val: 10000
+timestep_mins: 60
+time_period_yrs: 10
+carbon_price: {2010: 25, 2020: 45, 2030: 65, 2040: 100, 2050: 200}
+
+[Demand]
+model: demand.txmulti_victempdemand.VicTempDemand
+site_index: 0
+
+[Solar]
+model: generator.txmultivariablegenerator.TxMultiVariableGeneratorBase
+capital_cost: 2.0
+size: 1
+detail_type: Solar
+data_name: ts_solar
+
+[Wind]
+model: generator.txmultivariablegenerator.TxMultiVariableGeneratorBase
+capital_cost: 1.2
+size: 1
+detail_type: Wind
+data_name: ts_wind
+
+[Gas]
+model: thermal.txmultiinstantthermal.TxMultiInstantOptimisableThermal
+capital_cost: 1.0
+fuel_price_mwh: 30
+carbon_intensity: 0.6
+size: 1
+tech_type: gas
+
+[Coal]
+model: thermal.txmultislowresponsethermal.TxMultiSlowResponseThermal
+capital_cost: 2.0
+fuel_price_mwh: 10
+carbon_intensity: 1.0
+tech_type: coal
+size: 1
+ramp_time_mins: 240
+
+[Coal_instant]
+model: thermal.txmultiinstantthermal.TxMultiInstantOptimisableThermal
+capital_cost: 2.0
+fuel_price_mwh: 10
+carbon_intensity: 1.0
+# size = 1 is important so that capacity value translates from web input
+size: 1
+
+[MissedSupply]
+# Use this timestep-reliability missed supply, as the capped missed
+# supply requires a total demand figure to calculate from, but this
+# is not clear with the demand shaping.
+model: missed_supply.txmultimissedsupply.TxMultiLinearMissedSupply
+cost_per_mwh: 0
+
+[Data]
+# This data set provides only a single location, a simplification
+# at this time, to match what the Master does with the location data.
+model: data.sample_ge_data.Data

@@ -1,0 +1,2180 @@
+DEBUG    : average score before: -2411444130.180279
+CRITICAL : Run started at Sat Mar 02 21:39:01 2013
+DEBUG    : b_score = -1012304.318396
+DEBUG    : iteration: 0
+INFO     : Interim results at iteration 0
+INFO     : best gene was: [2150, 5970, -8083, 103, -1877, 5809, 9096, -1666, -5135, 7570, -9455, -3391, -2105, -6441, 3599, 365, -5021, -1735, 3838, -3501, -8646, -790, -6099, 2426, -5963, -7300, 7880, -3394, -4154, 765]
+INFO     : on loop 0, with score -1012304.318396
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -1274282751.110309
+INFO     : ======================================================
+INFO     : Total cost ($M): 1012304.32, including carbon (MT): 1619.69, terminal value ($M): 0.00
+INFO     : ======================================================
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2010:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 324659.79, carbon (MT): 904.05
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 2633.18, GWh 101126.92) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 2000.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 22060.00, GWh 80111.53) : Wind with site capacities (MW): (22: 1000.00)  (33: 1030.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 81200.00, GWh 2372670.13) : Solar_Thermal with site capacities (MW): (77: 59700.00)  (88: 21500.00) 
+INFO     : fossil ($M 218766.61, GWh 858422.83) : Instant Fossil Thermal, optimisable, max capacity (MW) 58090.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2020:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 257781.02, carbon (MT): 308.42
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 151400.00, GWh 1700762.83) : Wind with site capacities (MW): (22: 1000.00)  (33: 76730.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 90960.00, GWh 5348158.28) : Solar_Thermal with site capacities (MW): (77: 59700.00)  (88: 112460.00) 
+INFO     : fossil ($M 15421.02, GWh 342689.24) : Instant Fossil Thermal, optimisable, max capacity (MW) 58090.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2030:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 84489.16, carbon (MT): 69.46
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 79280.00, GWh 3188909.63) : Wind with site capacities (MW): (22: 35990.00)  (33: 79350.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 0.00, GWh 2975488.15) : Solar_Thermal with site capacities (MW): (88: 90960.00) 
+INFO     : fossil ($M 5209.16, GWh 77172.79) : Instant Fossil Thermal, optimisable, max capacity (MW) 58090.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2040:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 149203.11, carbon (MT): 259.13
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 1563975.13) : Wind with site capacities (MW): (22: 35990.00)  (33: 3650.00)  (66: 300.00) 
+INFO     : solar ($M 38380.00, GWh 1255488.51) : Solar_Thermal with site capacities (MW): (88: 38380.00) 
+INFO     : fossil ($M 110823.11, GWh 287923.42) : Instant Fossil Thermal, optimisable, max capacity (MW) 24260.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2050:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 196171.24, carbon (MT): 78.64
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 157600.00, GWh 3225092.28) : Wind with site capacities (MW): (22: 78800.00) 
+INFO     : solar ($M 0.00, GWh 1255488.51) : Solar_Thermal with site capacities (MW): (88: 38380.00) 
+INFO     : fossil ($M 38571.24, GWh 87379.59) : Instant Fossil Thermal, optimisable, max capacity (MW) 31910.00
+INFO     : ======================================================
+DEBUG    : b_score = -1012304.318396
+DEBUG    : iteration: 1
+DEBUG    : b_score = -1012304.318396
+DEBUG    : iteration: 2
+DEBUG    : b_score = -1012304.318396
+DEBUG    : iteration: 3
+DEBUG    : b_score = -1018200.944651
+DEBUG    : iteration: 4
+DEBUG    : b_score = -1006500.000246
+DEBUG    : iteration: 5
+DEBUG    : b_score = -1005780.988400
+DEBUG    : iteration: 6
+DEBUG    : b_score = -893639.008329
+DEBUG    : iteration: 7
+DEBUG    : b_score = -893635.312671
+DEBUG    : iteration: 8
+DEBUG    : b_score = -893635.312671
+DEBUG    : iteration: 9
+DEBUG    : b_score = -842240.270005
+DEBUG    : iteration: 10
+DEBUG    : b_score = -834963.261152
+DEBUG    : iteration: 11
+DEBUG    : b_score = -694251.805796
+DEBUG    : iteration: 12
+DEBUG    : b_score = -694251.805796
+DEBUG    : iteration: 13
+DEBUG    : b_score = -694251.805796
+DEBUG    : iteration: 14
+DEBUG    : b_score = -621233.462769
+DEBUG    : iteration: 15
+DEBUG    : b_score = -619774.275052
+DEBUG    : iteration: 16
+DEBUG    : b_score = -617865.727521
+DEBUG    : iteration: 17
+DEBUG    : b_score = -614045.526850
+DEBUG    : iteration: 18
+DEBUG    : b_score = -585839.428431
+DEBUG    : iteration: 19
+DEBUG    : b_score = -584324.859451
+DEBUG    : iteration: 20
+DEBUG    : b_score = -583531.544440
+DEBUG    : iteration: 21
+DEBUG    : b_score = -569065.763866
+DEBUG    : iteration: 22
+DEBUG    : b_score = -571982.030350
+DEBUG    : iteration: 23
+DEBUG    : b_score = -563159.447682
+DEBUG    : iteration: 24
+DEBUG    : b_score = -557419.447682
+DEBUG    : iteration: 25
+DEBUG    : b_score = -560494.921807
+DEBUG    : iteration: 26
+DEBUG    : b_score = -558470.514577
+DEBUG    : iteration: 27
+DEBUG    : b_score = -552815.799875
+DEBUG    : iteration: 28
+DEBUG    : b_score = -552815.799875
+DEBUG    : iteration: 29
+DEBUG    : b_score = -552815.799875
+DEBUG    : iteration: 30
+DEBUG    : b_score = -554241.907534
+DEBUG    : iteration: 31
+DEBUG    : b_score = -552876.112177
+DEBUG    : iteration: 32
+DEBUG    : b_score = -548084.109136
+DEBUG    : iteration: 33
+DEBUG    : b_score = -547464.425820
+DEBUG    : iteration: 34
+DEBUG    : b_score = -540411.444872
+DEBUG    : iteration: 35
+DEBUG    : b_score = -540327.797938
+DEBUG    : iteration: 36
+DEBUG    : b_score = -539940.855599
+DEBUG    : iteration: 37
+DEBUG    : b_score = -538713.822942
+DEBUG    : iteration: 38
+DEBUG    : b_score = -539269.325366
+DEBUG    : iteration: 39
+DEBUG    : b_score = -537539.974591
+DEBUG    : iteration: 40
+DEBUG    : b_score = -533530.454514
+DEBUG    : iteration: 41
+DEBUG    : b_score = -531473.279232
+DEBUG    : iteration: 42
+DEBUG    : b_score = -531473.279232
+DEBUG    : iteration: 43
+DEBUG    : b_score = -530891.599329
+DEBUG    : iteration: 44
+DEBUG    : b_score = -527179.796623
+DEBUG    : iteration: 45
+DEBUG    : b_score = -528074.125782
+DEBUG    : iteration: 46
+DEBUG    : b_score = -527778.078071
+DEBUG    : iteration: 47
+DEBUG    : b_score = -523615.326238
+DEBUG    : iteration: 48
+DEBUG    : b_score = -523615.326238
+DEBUG    : iteration: 49
+DEBUG    : b_score = -523615.326238
+DEBUG    : iteration: 50
+DEBUG    : b_score = -523125.835058
+DEBUG    : iteration: 51
+DEBUG    : b_score = -521569.047907
+DEBUG    : iteration: 52
+DEBUG    : b_score = -521411.557870
+DEBUG    : iteration: 53
+DEBUG    : b_score = -502928.214170
+DEBUG    : iteration: 54
+DEBUG    : b_score = -502928.214170
+DEBUG    : iteration: 55
+DEBUG    : b_score = -502928.214170
+DEBUG    : iteration: 56
+DEBUG    : b_score = -502928.214170
+DEBUG    : iteration: 57
+DEBUG    : b_score = -502928.214170
+DEBUG    : iteration: 58
+DEBUG    : b_score = -503020.401534
+DEBUG    : iteration: 59
+DEBUG    : b_score = -502442.777742
+DEBUG    : iteration: 60
+DEBUG    : b_score = -504718.856460
+DEBUG    : iteration: 61
+DEBUG    : b_score = -504833.283179
+DEBUG    : iteration: 62
+DEBUG    : b_score = -504932.299237
+DEBUG    : iteration: 63
+DEBUG    : b_score = -504200.742642
+DEBUG    : iteration: 64
+DEBUG    : b_score = -504757.564592
+DEBUG    : iteration: 65
+DEBUG    : b_score = -503049.215577
+DEBUG    : iteration: 66
+DEBUG    : b_score = -504134.296545
+DEBUG    : iteration: 67
+DEBUG    : b_score = -504134.296545
+DEBUG    : iteration: 68
+DEBUG    : b_score = -501856.459026
+DEBUG    : iteration: 69
+DEBUG    : b_score = -502857.598721
+DEBUG    : iteration: 70
+DEBUG    : b_score = -502548.558079
+DEBUG    : iteration: 71
+DEBUG    : b_score = -502857.598721
+DEBUG    : iteration: 72
+DEBUG    : b_score = -503010.548119
+DEBUG    : iteration: 73
+DEBUG    : b_score = -502899.455883
+DEBUG    : iteration: 74
+DEBUG    : b_score = -501445.851746
+DEBUG    : iteration: 75
+DEBUG    : b_score = -501445.851746
+DEBUG    : iteration: 76
+DEBUG    : b_score = -502389.571656
+DEBUG    : iteration: 77
+DEBUG    : b_score = -500206.803960
+DEBUG    : iteration: 78
+DEBUG    : b_score = -500206.803960
+DEBUG    : iteration: 79
+DEBUG    : b_score = -498716.253414
+DEBUG    : iteration: 80
+DEBUG    : b_score = -498716.253414
+DEBUG    : iteration: 81
+DEBUG    : b_score = -499793.664847
+DEBUG    : iteration: 82
+DEBUG    : b_score = -499606.134592
+DEBUG    : iteration: 83
+DEBUG    : b_score = -499113.960627
+DEBUG    : iteration: 84
+DEBUG    : b_score = -498949.169264
+DEBUG    : iteration: 85
+DEBUG    : b_score = -498993.756112
+DEBUG    : iteration: 86
+DEBUG    : b_score = -498993.756112
+DEBUG    : iteration: 87
+DEBUG    : b_score = -498823.924633
+DEBUG    : iteration: 88
+DEBUG    : b_score = -498792.555594
+DEBUG    : iteration: 89
+DEBUG    : b_score = -498792.555594
+DEBUG    : iteration: 90
+DEBUG    : b_score = -498792.555594
+DEBUG    : iteration: 91
+DEBUG    : b_score = -498929.218135
+DEBUG    : iteration: 92
+DEBUG    : b_score = -498345.036230
+DEBUG    : iteration: 93
+DEBUG    : b_score = -498349.044789
+DEBUG    : iteration: 94
+DEBUG    : b_score = -498278.242042
+DEBUG    : iteration: 95
+DEBUG    : b_score = -497738.361506
+DEBUG    : iteration: 96
+DEBUG    : b_score = -497979.042740
+DEBUG    : iteration: 97
+DEBUG    : b_score = -498148.311816
+DEBUG    : iteration: 98
+DEBUG    : b_score = -497781.199171
+DEBUG    : iteration: 99
+DEBUG    : b_score = -498223.656720
+DEBUG    : iteration: 100
+DEBUG    : b_score = -497848.853803
+DEBUG    : iteration: 101
+DEBUG    : b_score = -497302.604711
+DEBUG    : iteration: 102
+DEBUG    : b_score = -497302.604711
+DEBUG    : iteration: 103
+DEBUG    : b_score = -496747.929922
+DEBUG    : iteration: 104
+DEBUG    : b_score = -495944.812295
+DEBUG    : iteration: 105
+DEBUG    : b_score = -495944.812295
+DEBUG    : iteration: 106
+DEBUG    : b_score = -495944.812295
+DEBUG    : iteration: 107
+DEBUG    : b_score = -496304.404508
+DEBUG    : iteration: 108
+DEBUG    : b_score = -497185.473392
+DEBUG    : iteration: 109
+DEBUG    : b_score = -497512.975588
+DEBUG    : iteration: 110
+DEBUG    : b_score = -496326.818704
+DEBUG    : iteration: 111
+DEBUG    : b_score = -496326.818704
+DEBUG    : iteration: 112
+DEBUG    : b_score = -497714.247725
+DEBUG    : iteration: 113
+DEBUG    : b_score = -497507.223838
+DEBUG    : iteration: 114
+DEBUG    : b_score = -497266.604900
+DEBUG    : iteration: 115
+DEBUG    : b_score = -497966.417418
+DEBUG    : iteration: 116
+DEBUG    : b_score = -497433.886983
+DEBUG    : iteration: 117
+DEBUG    : b_score = -497403.155537
+DEBUG    : iteration: 118
+DEBUG    : b_score = -496799.459934
+DEBUG    : iteration: 119
+DEBUG    : b_score = -496876.503481
+DEBUG    : iteration: 120
+DEBUG    : b_score = -496435.772886
+DEBUG    : iteration: 121
+DEBUG    : b_score = -495818.019831
+DEBUG    : iteration: 122
+DEBUG    : b_score = -495811.480854
+DEBUG    : iteration: 123
+DEBUG    : b_score = -495811.480854
+DEBUG    : iteration: 124
+DEBUG    : b_score = -495985.446647
+DEBUG    : iteration: 125
+DEBUG    : b_score = -496020.711603
+DEBUG    : iteration: 126
+DEBUG    : b_score = -495909.924993
+DEBUG    : iteration: 127
+DEBUG    : b_score = -496551.373352
+DEBUG    : iteration: 128
+DEBUG    : b_score = -496225.596815
+DEBUG    : iteration: 129
+DEBUG    : b_score = -495413.388531
+DEBUG    : iteration: 130
+DEBUG    : b_score = -495552.739702
+DEBUG    : iteration: 131
+DEBUG    : b_score = -496014.847824
+DEBUG    : iteration: 132
+DEBUG    : b_score = -495047.910657
+DEBUG    : iteration: 133
+DEBUG    : b_score = -494947.137159
+DEBUG    : iteration: 134
+DEBUG    : b_score = -495108.625788
+DEBUG    : iteration: 135
+DEBUG    : b_score = -494804.051990
+DEBUG    : iteration: 136
+DEBUG    : b_score = -494804.051990
+DEBUG    : iteration: 137
+DEBUG    : b_score = -494804.051990
+DEBUG    : iteration: 138
+DEBUG    : b_score = -494804.051990
+DEBUG    : iteration: 139
+DEBUG    : b_score = -494990.612770
+DEBUG    : iteration: 140
+DEBUG    : b_score = -494990.612770
+DEBUG    : iteration: 141
+DEBUG    : b_score = -494854.809134
+DEBUG    : iteration: 142
+DEBUG    : b_score = -494827.645385
+DEBUG    : iteration: 143
+DEBUG    : b_score = -494625.524932
+DEBUG    : iteration: 144
+DEBUG    : b_score = -494625.524932
+DEBUG    : iteration: 145
+DEBUG    : b_score = -494610.790464
+DEBUG    : iteration: 146
+DEBUG    : b_score = -494645.929195
+DEBUG    : iteration: 147
+DEBUG    : b_score = -494506.576046
+DEBUG    : iteration: 148
+DEBUG    : b_score = -494611.682200
+DEBUG    : iteration: 149
+DEBUG    : b_score = -494561.228981
+DEBUG    : iteration: 150
+DEBUG    : b_score = -494516.465051
+DEBUG    : iteration: 151
+DEBUG    : b_score = -494561.228981
+DEBUG    : iteration: 152
+DEBUG    : b_score = -494653.033628
+DEBUG    : iteration: 153
+DEBUG    : b_score = -494739.435577
+DEBUG    : iteration: 154
+DEBUG    : b_score = -494549.044240
+DEBUG    : iteration: 155
+DEBUG    : b_score = -494675.718936
+DEBUG    : iteration: 156
+DEBUG    : b_score = -494453.526121
+DEBUG    : iteration: 157
+DEBUG    : b_score = -494939.890714
+DEBUG    : iteration: 158
+DEBUG    : b_score = -494934.477795
+DEBUG    : iteration: 159
+DEBUG    : b_score = -494858.341226
+DEBUG    : iteration: 160
+DEBUG    : b_score = -494785.744868
+DEBUG    : iteration: 161
+DEBUG    : b_score = -494878.667501
+DEBUG    : iteration: 162
+DEBUG    : b_score = -494536.036436
+DEBUG    : iteration: 163
+DEBUG    : b_score = -494684.067445
+DEBUG    : iteration: 164
+DEBUG    : b_score = -494796.974983
+DEBUG    : iteration: 165
+DEBUG    : b_score = -494559.820455
+DEBUG    : iteration: 166
+DEBUG    : b_score = -494581.238058
+DEBUG    : iteration: 167
+DEBUG    : b_score = -494427.923486
+DEBUG    : iteration: 168
+DEBUG    : b_score = -494502.521991
+DEBUG    : iteration: 169
+DEBUG    : b_score = -494485.797008
+DEBUG    : iteration: 170
+DEBUG    : b_score = -494485.797008
+DEBUG    : iteration: 171
+DEBUG    : b_score = -494585.249991
+DEBUG    : iteration: 172
+DEBUG    : b_score = -494585.249991
+DEBUG    : iteration: 173
+DEBUG    : b_score = -494551.056305
+DEBUG    : iteration: 174
+DEBUG    : b_score = -494585.249991
+DEBUG    : iteration: 175
+DEBUG    : b_score = -494585.249991
+DEBUG    : iteration: 176
+DEBUG    : b_score = -494593.012395
+DEBUG    : iteration: 177
+DEBUG    : b_score = -494827.689614
+DEBUG    : iteration: 178
+DEBUG    : b_score = -494827.689614
+DEBUG    : iteration: 179
+DEBUG    : b_score = -495221.999854
+DEBUG    : iteration: 180
+DEBUG    : b_score = -495033.294066
+DEBUG    : iteration: 181
+DEBUG    : b_score = -495033.294066
+DEBUG    : iteration: 182
+DEBUG    : b_score = -494823.173252
+DEBUG    : iteration: 183
+DEBUG    : b_score = -494852.594024
+DEBUG    : iteration: 184
+DEBUG    : b_score = -494852.594024
+DEBUG    : iteration: 185
+DEBUG    : b_score = -494794.254212
+DEBUG    : iteration: 186
+DEBUG    : b_score = -494764.565094
+DEBUG    : iteration: 187
+DEBUG    : b_score = -494535.240426
+DEBUG    : iteration: 188
+DEBUG    : b_score = -494491.285423
+DEBUG    : iteration: 189
+DEBUG    : b_score = -494346.316129
+DEBUG    : iteration: 190
+DEBUG    : b_score = -494363.352363
+DEBUG    : iteration: 191
+DEBUG    : b_score = -494298.660850
+DEBUG    : iteration: 192
+DEBUG    : b_score = -494393.374197
+DEBUG    : iteration: 193
+DEBUG    : b_score = -494360.134090
+DEBUG    : iteration: 194
+DEBUG    : b_score = -494378.810443
+DEBUG    : iteration: 195
+DEBUG    : b_score = -494365.704787
+DEBUG    : iteration: 196
+DEBUG    : b_score = -494175.386349
+DEBUG    : iteration: 197
+DEBUG    : b_score = -494327.726511
+DEBUG    : iteration: 198
+DEBUG    : b_score = -494289.537715
+DEBUG    : iteration: 199
+DEBUG    : b_score = -494317.859614
+DEBUG    : iteration: 200
+DEBUG    : b_score = -494151.477302
+DEBUG    : iteration: 201
+DEBUG    : b_score = -494325.071589
+DEBUG    : iteration: 202
+DEBUG    : b_score = -494151.630509
+DEBUG    : iteration: 203
+DEBUG    : b_score = -494185.770647
+DEBUG    : iteration: 204
+DEBUG    : b_score = -494072.662132
+DEBUG    : iteration: 205
+DEBUG    : b_score = -494145.348825
+DEBUG    : iteration: 206
+DEBUG    : b_score = -494163.465418
+DEBUG    : iteration: 207
+DEBUG    : b_score = -494163.465418
+DEBUG    : iteration: 208
+DEBUG    : b_score = -494049.662053
+DEBUG    : iteration: 209
+DEBUG    : b_score = -494056.779309
+DEBUG    : iteration: 210
+DEBUG    : b_score = -494155.086990
+DEBUG    : iteration: 211
+DEBUG    : b_score = -494155.086990
+DEBUG    : iteration: 212
+DEBUG    : b_score = -494179.597711
+DEBUG    : iteration: 213
+DEBUG    : b_score = -494260.585341
+DEBUG    : iteration: 214
+DEBUG    : b_score = -494260.585341
+DEBUG    : iteration: 215
+DEBUG    : b_score = -494273.215216
+DEBUG    : iteration: 216
+DEBUG    : b_score = -494273.215216
+DEBUG    : iteration: 217
+DEBUG    : b_score = -494086.228752
+DEBUG    : iteration: 218
+DEBUG    : b_score = -494220.661073
+DEBUG    : iteration: 219
+DEBUG    : b_score = -494102.741071
+DEBUG    : iteration: 220
+DEBUG    : b_score = -494253.514219
+DEBUG    : iteration: 221
+DEBUG    : b_score = -494347.039515
+DEBUG    : iteration: 222
+DEBUG    : b_score = -494312.444218
+DEBUG    : iteration: 223
+DEBUG    : b_score = -494275.781920
+DEBUG    : iteration: 224
+DEBUG    : b_score = -494144.004860
+DEBUG    : iteration: 225
+DEBUG    : b_score = -494060.324389
+DEBUG    : iteration: 226
+DEBUG    : b_score = -494316.276537
+DEBUG    : iteration: 227
+DEBUG    : b_score = -494093.757093
+DEBUG    : iteration: 228
+DEBUG    : b_score = -494093.757093
+DEBUG    : iteration: 229
+DEBUG    : b_score = -494329.359021
+DEBUG    : iteration: 230
+DEBUG    : b_score = -494145.434148
+DEBUG    : iteration: 231
+DEBUG    : b_score = -494139.192619
+DEBUG    : iteration: 232
+DEBUG    : b_score = -494139.192619
+DEBUG    : iteration: 233
+DEBUG    : b_score = -494205.330934
+DEBUG    : iteration: 234
+DEBUG    : b_score = -494100.330934
+DEBUG    : iteration: 235
+DEBUG    : b_score = -494098.636724
+DEBUG    : iteration: 236
+DEBUG    : b_score = -494069.210758
+DEBUG    : iteration: 237
+DEBUG    : b_score = -494099.362744
+DEBUG    : iteration: 238
+DEBUG    : b_score = -494187.849557
+DEBUG    : iteration: 239
+DEBUG    : b_score = -494310.608590
+DEBUG    : iteration: 240
+DEBUG    : b_score = -494008.300051
+DEBUG    : iteration: 241
+DEBUG    : b_score = -494016.325595
+DEBUG    : iteration: 242
+DEBUG    : b_score = -494040.032090
+DEBUG    : iteration: 243
+DEBUG    : b_score = -494040.032090
+DEBUG    : iteration: 244
+DEBUG    : b_score = -494033.833708
+DEBUG    : iteration: 245
+DEBUG    : b_score = -494033.833708
+DEBUG    : iteration: 246
+DEBUG    : b_score = -494033.833708
+DEBUG    : iteration: 247
+DEBUG    : b_score = -494028.316019
+DEBUG    : iteration: 248
+DEBUG    : b_score = -493912.376399
+DEBUG    : iteration: 249
+DEBUG    : b_score = -493912.376399
+DEBUG    : iteration: 250
+DEBUG    : b_score = -493912.376399
+DEBUG    : iteration: 251
+DEBUG    : b_score = -493970.399929
+DEBUG    : iteration: 252
+DEBUG    : b_score = -493970.399929
+DEBUG    : iteration: 253
+DEBUG    : b_score = -494332.885715
+DEBUG    : iteration: 254
+DEBUG    : b_score = -494329.195578
+DEBUG    : iteration: 255
+DEBUG    : b_score = -494327.212147
+DEBUG    : iteration: 256
+DEBUG    : b_score = -494065.827867
+DEBUG    : iteration: 257
+DEBUG    : b_score = -494327.212147
+DEBUG    : iteration: 258
+DEBUG    : b_score = -494293.409682
+DEBUG    : iteration: 259
+DEBUG    : b_score = -494271.264606
+DEBUG    : iteration: 260
+DEBUG    : b_score = -494239.651110
+DEBUG    : iteration: 261
+DEBUG    : b_score = -494143.292747
+DEBUG    : iteration: 262
+DEBUG    : b_score = -494143.292747
+DEBUG    : iteration: 263
+DEBUG    : b_score = -494190.018718
+DEBUG    : iteration: 264
+DEBUG    : b_score = -494124.932124
+DEBUG    : iteration: 265
+DEBUG    : b_score = -494328.026197
+DEBUG    : iteration: 266
+DEBUG    : b_score = -494395.184290
+DEBUG    : iteration: 267
+DEBUG    : b_score = -494227.789116
+DEBUG    : iteration: 268
+DEBUG    : b_score = -494227.789116
+DEBUG    : iteration: 269
+DEBUG    : b_score = -493878.724578
+DEBUG    : iteration: 270
+DEBUG    : b_score = -493878.724578
+DEBUG    : iteration: 271
+DEBUG    : b_score = -493878.724578
+DEBUG    : iteration: 272
+DEBUG    : b_score = -493878.724578
+DEBUG    : iteration: 273
+DEBUG    : b_score = -493967.881499
+DEBUG    : iteration: 274
+DEBUG    : b_score = -493967.881499
+DEBUG    : iteration: 275
+DEBUG    : b_score = -494165.429930
+DEBUG    : iteration: 276
+DEBUG    : b_score = -494406.391054
+DEBUG    : iteration: 277
+DEBUG    : b_score = -494110.930235
+DEBUG    : iteration: 278
+DEBUG    : b_score = -493995.149233
+DEBUG    : iteration: 279
+DEBUG    : b_score = -493991.214258
+DEBUG    : iteration: 280
+DEBUG    : b_score = -493980.611568
+DEBUG    : iteration: 281
+DEBUG    : b_score = -493980.611568
+DEBUG    : iteration: 282
+DEBUG    : b_score = -493980.611568
+DEBUG    : iteration: 283
+DEBUG    : b_score = -493935.486512
+DEBUG    : iteration: 284
+DEBUG    : b_score = -493935.486512
+DEBUG    : iteration: 285
+DEBUG    : b_score = -493966.821040
+DEBUG    : iteration: 286
+DEBUG    : b_score = -493909.384870
+DEBUG    : iteration: 287
+DEBUG    : b_score = -493950.903607
+DEBUG    : iteration: 288
+DEBUG    : b_score = -493977.876830
+DEBUG    : iteration: 289
+DEBUG    : b_score = -493942.683303
+DEBUG    : iteration: 290
+DEBUG    : b_score = -493953.212543
+DEBUG    : iteration: 291
+DEBUG    : b_score = -493958.020259
+DEBUG    : iteration: 292
+DEBUG    : b_score = -493958.020259
+DEBUG    : iteration: 293
+DEBUG    : b_score = -493983.161500
+DEBUG    : iteration: 294
+DEBUG    : b_score = -493983.161500
+DEBUG    : iteration: 295
+DEBUG    : b_score = -493973.963936
+DEBUG    : iteration: 296
+DEBUG    : b_score = -493991.349727
+DEBUG    : iteration: 297
+DEBUG    : b_score = -493996.963355
+DEBUG    : iteration: 298
+DEBUG    : b_score = -493996.963355
+DEBUG    : iteration: 299
+DEBUG    : b_score = -493996.963355
+DEBUG    : iteration: 300
+DEBUG    : b_score = -493986.057505
+DEBUG    : iteration: 301
+DEBUG    : b_score = -493951.057505
+DEBUG    : iteration: 302
+DEBUG    : b_score = -493925.240402
+DEBUG    : iteration: 303
+DEBUG    : b_score = -493925.240402
+DEBUG    : iteration: 304
+DEBUG    : b_score = -493925.240402
+DEBUG    : iteration: 305
+DEBUG    : b_score = -493901.768332
+DEBUG    : iteration: 306
+DEBUG    : b_score = -493901.768332
+DEBUG    : iteration: 307
+DEBUG    : b_score = -493901.768332
+DEBUG    : iteration: 308
+DEBUG    : b_score = -493901.768332
+DEBUG    : iteration: 309
+DEBUG    : b_score = -493930.839195
+DEBUG    : iteration: 310
+DEBUG    : b_score = -493939.693181
+DEBUG    : iteration: 311
+DEBUG    : b_score = -493939.693181
+DEBUG    : iteration: 312
+DEBUG    : b_score = -493939.693181
+DEBUG    : iteration: 313
+DEBUG    : b_score = -493939.693181
+DEBUG    : iteration: 314
+DEBUG    : b_score = -493939.693181
+DEBUG    : iteration: 315
+DEBUG    : b_score = -493975.862382
+DEBUG    : iteration: 316
+DEBUG    : b_score = -494001.192759
+DEBUG    : iteration: 317
+DEBUG    : b_score = -493988.115298
+DEBUG    : iteration: 318
+DEBUG    : b_score = -493988.115298
+DEBUG    : iteration: 319
+DEBUG    : b_score = -493946.448468
+DEBUG    : iteration: 320
+DEBUG    : b_score = -493894.477519
+DEBUG    : iteration: 321
+DEBUG    : b_score = -493943.137448
+DEBUG    : iteration: 322
+DEBUG    : b_score = -493943.137448
+DEBUG    : iteration: 323
+DEBUG    : b_score = -493933.103016
+DEBUG    : iteration: 324
+DEBUG    : b_score = -493959.339104
+DEBUG    : iteration: 325
+DEBUG    : b_score = -493919.297454
+DEBUG    : iteration: 326
+DEBUG    : b_score = -493919.297454
+DEBUG    : iteration: 327
+DEBUG    : b_score = -493963.762399
+DEBUG    : iteration: 328
+DEBUG    : b_score = -493898.039729
+DEBUG    : iteration: 329
+DEBUG    : b_score = -493961.718679
+DEBUG    : iteration: 330
+DEBUG    : b_score = -493961.718679
+DEBUG    : iteration: 331
+DEBUG    : b_score = -493972.393257
+DEBUG    : iteration: 332
+DEBUG    : b_score = -493973.520714
+DEBUG    : iteration: 333
+DEBUG    : b_score = -493973.520714
+DEBUG    : iteration: 334
+DEBUG    : b_score = -493989.852334
+DEBUG    : iteration: 335
+DEBUG    : b_score = -493966.238343
+DEBUG    : iteration: 336
+DEBUG    : b_score = -493983.890621
+DEBUG    : iteration: 337
+DEBUG    : b_score = -494045.232365
+DEBUG    : iteration: 338
+DEBUG    : b_score = -494069.651193
+DEBUG    : iteration: 339
+DEBUG    : b_score = -494031.274721
+DEBUG    : iteration: 340
+DEBUG    : b_score = -494031.274721
+DEBUG    : iteration: 341
+DEBUG    : b_score = -494041.080977
+DEBUG    : iteration: 342
+DEBUG    : b_score = -494119.799389
+DEBUG    : iteration: 343
+DEBUG    : b_score = -494148.261177
+DEBUG    : iteration: 344
+DEBUG    : b_score = -494137.355066
+DEBUG    : iteration: 345
+DEBUG    : b_score = -494150.346700
+DEBUG    : iteration: 346
+DEBUG    : b_score = -494084.986295
+DEBUG    : iteration: 347
+DEBUG    : b_score = -494040.480815
+DEBUG    : iteration: 348
+DEBUG    : b_score = -494042.756207
+DEBUG    : iteration: 349
+DEBUG    : b_score = -494042.756207
+DEBUG    : iteration: 350
+DEBUG    : b_score = -494066.053547
+DEBUG    : iteration: 351
+DEBUG    : b_score = -494048.054076
+DEBUG    : iteration: 352
+DEBUG    : b_score = -494047.895912
+DEBUG    : iteration: 353
+DEBUG    : b_score = -494033.635277
+DEBUG    : iteration: 354
+DEBUG    : b_score = -494048.733842
+DEBUG    : iteration: 355
+DEBUG    : b_score = -494048.733842
+DEBUG    : iteration: 356
+DEBUG    : b_score = -494048.733842
+DEBUG    : iteration: 357
+DEBUG    : b_score = -494054.661864
+DEBUG    : iteration: 358
+DEBUG    : b_score = -494054.661864
+DEBUG    : iteration: 359
+DEBUG    : b_score = -494054.661864
+DEBUG    : iteration: 360
+DEBUG    : b_score = -494018.694101
+DEBUG    : iteration: 361
+DEBUG    : b_score = -494140.619143
+DEBUG    : iteration: 362
+DEBUG    : b_score = -494115.659497
+DEBUG    : iteration: 363
+DEBUG    : b_score = -494115.659497
+DEBUG    : iteration: 364
+DEBUG    : b_score = -494069.976800
+DEBUG    : iteration: 365
+DEBUG    : b_score = -494049.756525
+DEBUG    : iteration: 366
+DEBUG    : b_score = -494073.072940
+DEBUG    : iteration: 367
+DEBUG    : b_score = -493907.217213
+DEBUG    : iteration: 368
+DEBUG    : b_score = -494042.132463
+DEBUG    : iteration: 369
+DEBUG    : b_score = -494041.952350
+DEBUG    : iteration: 370
+DEBUG    : b_score = -494041.952350
+DEBUG    : iteration: 371
+DEBUG    : b_score = -494008.156898
+DEBUG    : iteration: 372
+DEBUG    : b_score = -493919.805110
+DEBUG    : iteration: 373
+DEBUG    : b_score = -494105.020978
+DEBUG    : iteration: 374
+DEBUG    : b_score = -494053.117480
+DEBUG    : iteration: 375
+DEBUG    : b_score = -494404.101026
+DEBUG    : iteration: 376
+DEBUG    : b_score = -493882.102482
+DEBUG    : iteration: 377
+DEBUG    : b_score = -493882.102482
+DEBUG    : iteration: 378
+DEBUG    : b_score = -494581.243681
+DEBUG    : iteration: 379
+DEBUG    : b_score = -494202.473851
+DEBUG    : iteration: 380
+DEBUG    : b_score = -494198.060602
+DEBUG    : iteration: 381
+DEBUG    : b_score = -494214.921314
+DEBUG    : iteration: 382
+DEBUG    : b_score = -494147.302533
+DEBUG    : iteration: 383
+DEBUG    : b_score = -494147.302533
+DEBUG    : iteration: 384
+DEBUG    : b_score = -494147.302533
+DEBUG    : iteration: 385
+DEBUG    : b_score = -494121.214358
+DEBUG    : iteration: 386
+DEBUG    : b_score = -494120.699002
+DEBUG    : iteration: 387
+DEBUG    : b_score = -494042.428827
+DEBUG    : iteration: 388
+DEBUG    : b_score = -494335.772959
+DEBUG    : iteration: 389
+DEBUG    : b_score = -494335.772959
+DEBUG    : iteration: 390
+DEBUG    : b_score = -494242.089358
+DEBUG    : iteration: 391
+DEBUG    : b_score = -494372.640625
+DEBUG    : iteration: 392
+DEBUG    : b_score = -494162.790145
+DEBUG    : iteration: 393
+DEBUG    : b_score = -494258.214832
+DEBUG    : iteration: 394
+DEBUG    : b_score = -493985.326291
+DEBUG    : iteration: 395
+DEBUG    : b_score = -494427.656924
+DEBUG    : iteration: 396
+DEBUG    : b_score = -494217.656924
+DEBUG    : iteration: 397
+DEBUG    : b_score = -494186.362070
+DEBUG    : iteration: 398
+DEBUG    : b_score = -494286.596765
+DEBUG    : iteration: 399
+DEBUG    : b_score = -494286.596765
+DEBUG    : iteration: 400
+DEBUG    : b_score = -494286.596765
+DEBUG    : iteration: 401
+DEBUG    : b_score = -494286.596765
+DEBUG    : iteration: 402
+DEBUG    : b_score = -494309.765211
+DEBUG    : iteration: 403
+DEBUG    : b_score = -494126.383110
+DEBUG    : iteration: 404
+DEBUG    : b_score = -494074.248168
+DEBUG    : iteration: 405
+DEBUG    : b_score = -494074.248168
+DEBUG    : iteration: 406
+DEBUG    : b_score = -494074.248168
+DEBUG    : iteration: 407
+DEBUG    : b_score = -494074.248168
+DEBUG    : iteration: 408
+DEBUG    : b_score = -494042.837579
+DEBUG    : iteration: 409
+DEBUG    : b_score = -494054.032492
+DEBUG    : iteration: 410
+DEBUG    : b_score = -493973.828586
+DEBUG    : iteration: 411
+DEBUG    : b_score = -494034.429908
+DEBUG    : iteration: 412
+DEBUG    : b_score = -494054.819066
+DEBUG    : iteration: 413
+DEBUG    : b_score = -493904.471193
+DEBUG    : iteration: 414
+DEBUG    : b_score = -494005.979907
+DEBUG    : iteration: 415
+DEBUG    : b_score = -494026.030490
+DEBUG    : iteration: 416
+DEBUG    : b_score = -493994.659069
+DEBUG    : iteration: 417
+DEBUG    : b_score = -494013.239850
+DEBUG    : iteration: 418
+DEBUG    : b_score = -493929.235091
+DEBUG    : iteration: 419
+DEBUG    : b_score = -493920.012747
+DEBUG    : iteration: 420
+DEBUG    : b_score = -494212.916621
+DEBUG    : iteration: 421
+DEBUG    : b_score = -494128.224190
+DEBUG    : iteration: 422
+DEBUG    : b_score = -494158.561213
+DEBUG    : iteration: 423
+DEBUG    : b_score = -494055.287415
+DEBUG    : iteration: 424
+DEBUG    : b_score = -493963.496500
+DEBUG    : iteration: 425
+DEBUG    : b_score = -493990.330238
+DEBUG    : iteration: 426
+DEBUG    : b_score = -493921.959830
+DEBUG    : iteration: 427
+DEBUG    : b_score = -493921.959830
+DEBUG    : iteration: 428
+DEBUG    : b_score = -493921.959830
+DEBUG    : iteration: 429
+DEBUG    : b_score = -493921.959830
+DEBUG    : iteration: 430
+DEBUG    : b_score = -493924.782643
+DEBUG    : iteration: 431
+DEBUG    : b_score = -493924.782643
+DEBUG    : iteration: 432
+DEBUG    : b_score = -493913.969910
+DEBUG    : iteration: 433
+DEBUG    : b_score = -493913.969910
+DEBUG    : iteration: 434
+DEBUG    : b_score = -493913.969910
+DEBUG    : iteration: 435
+DEBUG    : b_score = -494117.720976
+DEBUG    : iteration: 436
+DEBUG    : b_score = -493970.922094
+DEBUG    : iteration: 437
+DEBUG    : b_score = -494137.885991
+DEBUG    : iteration: 438
+DEBUG    : b_score = -494080.165730
+DEBUG    : iteration: 439
+DEBUG    : b_score = -494137.885991
+DEBUG    : iteration: 440
+DEBUG    : b_score = -494199.600677
+DEBUG    : iteration: 441
+DEBUG    : b_score = -494125.239511
+DEBUG    : iteration: 442
+DEBUG    : b_score = -493628.153789
+DEBUG    : iteration: 443
+DEBUG    : b_score = -493521.901656
+DEBUG    : iteration: 444
+DEBUG    : b_score = -493629.143423
+DEBUG    : iteration: 445
+DEBUG    : b_score = -493598.936551
+DEBUG    : iteration: 446
+DEBUG    : b_score = -493503.950619
+DEBUG    : iteration: 447
+DEBUG    : b_score = -493503.950619
+DEBUG    : iteration: 448
+DEBUG    : b_score = -493392.212720
+DEBUG    : iteration: 449
+DEBUG    : b_score = -493351.672925
+DEBUG    : iteration: 450
+DEBUG    : b_score = -493389.858463
+DEBUG    : iteration: 451
+DEBUG    : b_score = -494212.305069
+DEBUG    : iteration: 452
+DEBUG    : b_score = -494151.260005
+DEBUG    : iteration: 453
+DEBUG    : b_score = -494151.260005
+DEBUG    : iteration: 454
+DEBUG    : b_score = -494265.581041
+DEBUG    : iteration: 455
+DEBUG    : b_score = -494401.455490
+DEBUG    : iteration: 456
+DEBUG    : b_score = -494521.481156
+DEBUG    : iteration: 457
+DEBUG    : b_score = -494193.446906
+DEBUG    : iteration: 458
+DEBUG    : b_score = -494193.446906
+DEBUG    : iteration: 459
+DEBUG    : b_score = -494091.657968
+DEBUG    : iteration: 460
+DEBUG    : b_score = -494613.745608
+DEBUG    : iteration: 461
+DEBUG    : b_score = -494568.607658
+DEBUG    : iteration: 462
+DEBUG    : b_score = -494393.949358
+DEBUG    : iteration: 463
+DEBUG    : b_score = -494143.069564
+DEBUG    : iteration: 464
+DEBUG    : b_score = -493923.822827
+DEBUG    : iteration: 465
+DEBUG    : b_score = -494590.289915
+DEBUG    : iteration: 466
+DEBUG    : b_score = -494670.778619
+DEBUG    : iteration: 467
+DEBUG    : b_score = -494670.778619
+DEBUG    : iteration: 468
+DEBUG    : b_score = -494633.652531
+DEBUG    : iteration: 469
+DEBUG    : b_score = -494633.652531
+DEBUG    : iteration: 470
+DEBUG    : b_score = -494593.264141
+DEBUG    : iteration: 471
+DEBUG    : b_score = -494555.991472
+DEBUG    : iteration: 472
+DEBUG    : b_score = -494027.946712
+DEBUG    : iteration: 473
+DEBUG    : b_score = -494027.946712
+DEBUG    : iteration: 474
+DEBUG    : b_score = -494089.946609
+DEBUG    : iteration: 475
+DEBUG    : b_score = -494089.946609
+DEBUG    : iteration: 476
+DEBUG    : b_score = -494087.137752
+DEBUG    : iteration: 477
+DEBUG    : b_score = -493920.006701
+DEBUG    : iteration: 478
+DEBUG    : b_score = -494047.313788
+DEBUG    : iteration: 479
+DEBUG    : b_score = -494189.968792
+DEBUG    : iteration: 480
+DEBUG    : b_score = -494135.076557
+DEBUG    : iteration: 481
+DEBUG    : b_score = -493899.162981
+DEBUG    : iteration: 482
+DEBUG    : b_score = -493899.162981
+DEBUG    : iteration: 483
+DEBUG    : b_score = -493899.162981
+DEBUG    : iteration: 484
+DEBUG    : b_score = -493897.127206
+DEBUG    : iteration: 485
+DEBUG    : b_score = -493855.413623
+DEBUG    : iteration: 486
+DEBUG    : b_score = -493855.413623
+DEBUG    : iteration: 487
+DEBUG    : b_score = -493855.413623
+DEBUG    : iteration: 488
+DEBUG    : b_score = -493874.971621
+DEBUG    : iteration: 489
+DEBUG    : b_score = -493874.971621
+DEBUG    : iteration: 490
+DEBUG    : b_score = -493880.018503
+DEBUG    : iteration: 491
+DEBUG    : b_score = -493873.255408
+DEBUG    : iteration: 492
+DEBUG    : b_score = -493870.613015
+DEBUG    : iteration: 493
+DEBUG    : b_score = -493870.613015
+DEBUG    : iteration: 494
+DEBUG    : b_score = -493854.009132
+DEBUG    : iteration: 495
+DEBUG    : b_score = -493918.885809
+DEBUG    : iteration: 496
+DEBUG    : b_score = -493719.081795
+DEBUG    : iteration: 497
+DEBUG    : b_score = -493719.081795
+DEBUG    : iteration: 498
+DEBUG    : b_score = -493726.408799
+DEBUG    : iteration: 499
+DEBUG    : b_score = -493735.857461
+DEBUG    : iteration: 500
+INFO     : Interim results at iteration 500
+INFO     : best gene was: [1219, -278, -6287, -3640, -7729, 2685, 317, -2962, 3384, -6275, -1175, -2864, -1764, 1125, -4764, -2840, -5785, 1932, 717, -8462, 5416, -6824, -7776, -8126, -7574, -27, -9241, -9196, -6747, -2047]
+INFO     : on loop 450, with score -493351.672925
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -502953.143883
+INFO     : ======================================================
+INFO     : Total cost ($M): 493351.67, including carbon (MT): 2572.95, terminal value ($M): 0.00
+INFO     : ======================================================
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2010:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 136034.90, carbon (MT): 1493.16
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 4541.26, GWh 174406.88) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 2000.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 58060.40) : Wind with site capacities (MW): (22: 1000.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 12190.00, GWh 398759.90) : Solar_Thermal with site capacities (MW): (88: 12190.00) 
+INFO     : fossil ($M 119303.64, GWh 1407146.59) : Instant Fossil Thermal, optimisable, max capacity (MW) 26850.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2020:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 87919.68, carbon (MT): 341.39
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 67680.00, GWh 1443049.27) : Wind with site capacities (MW): (22: 34840.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 3170.00, GWh 502457.10) : Solar_Thermal with site capacities (MW): (88: 15360.00) 
+INFO     : fossil ($M 17069.68, GWh 379326.32) : Instant Fossil Thermal, optimisable, max capacity (MW) 26850.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2030:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 106640.41, carbon (MT): 370.27
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 1402121.70) : Wind with site capacities (MW): (22: 33840.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 11250.00, GWh 418275.29) : Solar_Thermal with site capacities (MW): (77: 11250.00)  (88: 3170.00) 
+INFO     : fossil ($M 95390.41, GWh 411413.41) : Instant Fossil Thermal, optimisable, max capacity (MW) 46170.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2040:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 131393.65, carbon (MT): 159.04
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 108320.00, GWh 2229486.65) : Wind with site capacities (MW): (22: 54160.00)  (66: 300.00) 
+INFO     : solar ($M 7170.00, GWh 549123.49) : Solar_Thermal with site capacities (MW): (77: 11250.00)  (88: 7170.00) 
+INFO     : fossil ($M 15903.65, GWh 176707.26) : Instant Fossil Thermal, optimisable, max capacity (MW) 19320.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2050:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 31363.03, carbon (MT): 209.09
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 2216637.03) : Wind with site capacities (MW): (22: 54160.00) 
+INFO     : solar ($M 0.00, GWh 234545.40) : Solar_Thermal with site capacities (MW): (88: 7170.00) 
+INFO     : fossil ($M 31363.03, GWh 232318.72) : Instant Fossil Thermal, optimisable, max capacity (MW) 19320.00
+INFO     : ======================================================
+DEBUG    : b_score = -493748.481355
+DEBUG    : iteration: 501
+DEBUG    : b_score = -493876.069017
+DEBUG    : iteration: 502
+DEBUG    : b_score = -493839.083766
+DEBUG    : iteration: 503
+DEBUG    : b_score = -493857.717401
+DEBUG    : iteration: 504
+DEBUG    : b_score = -493856.207158
+DEBUG    : iteration: 505
+DEBUG    : b_score = -493829.186035
+DEBUG    : iteration: 506
+DEBUG    : b_score = -493829.186035
+DEBUG    : iteration: 507
+DEBUG    : b_score = -493829.186035
+DEBUG    : iteration: 508
+DEBUG    : b_score = -493856.207158
+DEBUG    : iteration: 509
+DEBUG    : b_score = -494374.395375
+DEBUG    : iteration: 510
+DEBUG    : b_score = -493946.925513
+DEBUG    : iteration: 511
+DEBUG    : b_score = -493946.896485
+DEBUG    : iteration: 512
+DEBUG    : b_score = -493946.896485
+DEBUG    : iteration: 513
+DEBUG    : b_score = -493946.896485
+DEBUG    : iteration: 514
+DEBUG    : b_score = -493946.896485
+DEBUG    : iteration: 515
+DEBUG    : b_score = -494026.973349
+DEBUG    : iteration: 516
+DEBUG    : b_score = -494234.166877
+DEBUG    : iteration: 517
+DEBUG    : b_score = -494363.778292
+DEBUG    : iteration: 518
+DEBUG    : b_score = -494177.453082
+DEBUG    : iteration: 519
+DEBUG    : b_score = -494177.340074
+DEBUG    : iteration: 520
+DEBUG    : b_score = -494351.223154
+DEBUG    : iteration: 521
+DEBUG    : b_score = -494143.077139
+DEBUG    : iteration: 522
+DEBUG    : b_score = -494187.971179
+DEBUG    : iteration: 523
+DEBUG    : b_score = -493908.897651
+DEBUG    : iteration: 524
+DEBUG    : b_score = -493908.897651
+DEBUG    : iteration: 525
+DEBUG    : b_score = -493834.891458
+DEBUG    : iteration: 526
+DEBUG    : b_score = -493846.269661
+DEBUG    : iteration: 527
+DEBUG    : b_score = -494186.808319
+DEBUG    : iteration: 528
+DEBUG    : b_score = -494145.496705
+DEBUG    : iteration: 529
+DEBUG    : b_score = -494145.496705
+DEBUG    : iteration: 530
+DEBUG    : b_score = -494145.496705
+DEBUG    : iteration: 531
+DEBUG    : b_score = -494145.496705
+DEBUG    : iteration: 532
+DEBUG    : b_score = -493722.208365
+DEBUG    : iteration: 533
+DEBUG    : b_score = -494024.154080
+DEBUG    : iteration: 534
+DEBUG    : b_score = -494024.154080
+DEBUG    : iteration: 535
+DEBUG    : b_score = -494040.139207
+DEBUG    : iteration: 536
+DEBUG    : b_score = -494063.472099
+DEBUG    : iteration: 537
+DEBUG    : b_score = -493892.845659
+DEBUG    : iteration: 538
+DEBUG    : b_score = -494058.564869
+DEBUG    : iteration: 539
+DEBUG    : b_score = -494056.954487
+DEBUG    : iteration: 540
+DEBUG    : b_score = -494056.954487
+DEBUG    : iteration: 541
+DEBUG    : b_score = -493946.978730
+DEBUG    : iteration: 542
+DEBUG    : b_score = -493972.983894
+DEBUG    : iteration: 543
+DEBUG    : b_score = -493953.270900
+DEBUG    : iteration: 544
+DEBUG    : b_score = -494007.460109
+DEBUG    : iteration: 545
+DEBUG    : b_score = -494040.195599
+DEBUG    : iteration: 546
+DEBUG    : b_score = -494040.195599
+DEBUG    : iteration: 547
+DEBUG    : b_score = -493987.753017
+DEBUG    : iteration: 548
+DEBUG    : b_score = -493955.968340
+DEBUG    : iteration: 549
+DEBUG    : b_score = -493953.858613
+DEBUG    : iteration: 550
+DEBUG    : b_score = -493935.535380
+DEBUG    : iteration: 551
+DEBUG    : b_score = -493736.993948
+DEBUG    : iteration: 552
+DEBUG    : b_score = -493736.993948
+DEBUG    : iteration: 553
+DEBUG    : b_score = -493736.993948
+DEBUG    : iteration: 554
+DEBUG    : b_score = -493708.745188
+DEBUG    : iteration: 555
+DEBUG    : b_score = -493708.745188
+DEBUG    : iteration: 556
+DEBUG    : b_score = -493891.144177
+DEBUG    : iteration: 557
+DEBUG    : b_score = -493925.539337
+DEBUG    : iteration: 558
+DEBUG    : b_score = -493929.633246
+DEBUG    : iteration: 559
+DEBUG    : b_score = -493829.615535
+DEBUG    : iteration: 560
+DEBUG    : b_score = -493829.615535
+DEBUG    : iteration: 561
+DEBUG    : b_score = -493757.816735
+DEBUG    : iteration: 562
+DEBUG    : b_score = -493757.816735
+DEBUG    : iteration: 563
+DEBUG    : b_score = -493742.003687
+DEBUG    : iteration: 564
+DEBUG    : b_score = -493749.820110
+DEBUG    : iteration: 565
+DEBUG    : b_score = -493749.728802
+DEBUG    : iteration: 566
+DEBUG    : b_score = -493911.147879
+DEBUG    : iteration: 567
+DEBUG    : b_score = -493911.147879
+DEBUG    : iteration: 568
+DEBUG    : b_score = -493911.147879
+DEBUG    : iteration: 569
+DEBUG    : b_score = -494059.994492
+DEBUG    : iteration: 570
+DEBUG    : b_score = -494014.797465
+DEBUG    : iteration: 571
+DEBUG    : b_score = -494014.797465
+DEBUG    : iteration: 572
+DEBUG    : b_score = -493973.646434
+DEBUG    : iteration: 573
+DEBUG    : b_score = -493942.949497
+DEBUG    : iteration: 574
+DEBUG    : b_score = -493696.934356
+DEBUG    : iteration: 575
+DEBUG    : b_score = -494140.914513
+DEBUG    : iteration: 576
+DEBUG    : b_score = -494152.836777
+DEBUG    : iteration: 577
+DEBUG    : b_score = -493790.882879
+DEBUG    : iteration: 578
+DEBUG    : b_score = -493790.882879
+DEBUG    : iteration: 579
+DEBUG    : b_score = -493791.343587
+DEBUG    : iteration: 580
+DEBUG    : b_score = -493964.277003
+DEBUG    : iteration: 581
+DEBUG    : b_score = -494206.065265
+DEBUG    : iteration: 582
+DEBUG    : b_score = -493898.649975
+DEBUG    : iteration: 583
+DEBUG    : b_score = -493898.649975
+DEBUG    : iteration: 584
+DEBUG    : b_score = -494143.915505
+DEBUG    : iteration: 585
+DEBUG    : b_score = -494148.062192
+DEBUG    : iteration: 586
+DEBUG    : b_score = -494293.274158
+DEBUG    : iteration: 587
+DEBUG    : b_score = -494274.254960
+DEBUG    : iteration: 588
+DEBUG    : b_score = -494180.212206
+DEBUG    : iteration: 589
+DEBUG    : b_score = -494177.012582
+DEBUG    : iteration: 590
+DEBUG    : b_score = -494140.542032
+DEBUG    : iteration: 591
+DEBUG    : b_score = -494565.477642
+DEBUG    : iteration: 592
+DEBUG    : b_score = -494235.182067
+DEBUG    : iteration: 593
+DEBUG    : b_score = -494576.030180
+DEBUG    : iteration: 594
+DEBUG    : b_score = -494217.903147
+DEBUG    : iteration: 595
+DEBUG    : b_score = -494217.819430
+DEBUG    : iteration: 596
+DEBUG    : b_score = -494217.819430
+DEBUG    : iteration: 597
+DEBUG    : b_score = -494174.372924
+DEBUG    : iteration: 598
+DEBUG    : b_score = -494176.119905
+DEBUG    : iteration: 599
+DEBUG    : b_score = -493943.671486
+DEBUG    : iteration: 600
+DEBUG    : b_score = -494520.476327
+DEBUG    : iteration: 601
+DEBUG    : b_score = -494277.714499
+DEBUG    : iteration: 602
+DEBUG    : b_score = -494410.249589
+DEBUG    : iteration: 603
+DEBUG    : b_score = -494335.766026
+DEBUG    : iteration: 604
+DEBUG    : b_score = -494108.457020
+DEBUG    : iteration: 605
+DEBUG    : b_score = -494108.457020
+DEBUG    : iteration: 606
+DEBUG    : b_score = -494136.555263
+DEBUG    : iteration: 607
+DEBUG    : b_score = -494136.555263
+DEBUG    : iteration: 608
+DEBUG    : b_score = -494136.555263
+DEBUG    : iteration: 609
+DEBUG    : b_score = -494248.326224
+DEBUG    : iteration: 610
+DEBUG    : b_score = -494248.326224
+DEBUG    : iteration: 611
+DEBUG    : b_score = -493941.037672
+DEBUG    : iteration: 612
+DEBUG    : b_score = -493941.037672
+DEBUG    : iteration: 613
+DEBUG    : b_score = -493809.705636
+DEBUG    : iteration: 614
+DEBUG    : b_score = -494306.871818
+DEBUG    : iteration: 615
+DEBUG    : b_score = -494191.937038
+DEBUG    : iteration: 616
+DEBUG    : b_score = -493806.937038
+DEBUG    : iteration: 617
+DEBUG    : b_score = -494298.783554
+DEBUG    : iteration: 618
+DEBUG    : b_score = -494167.398259
+DEBUG    : iteration: 619
+DEBUG    : b_score = -494328.187145
+DEBUG    : iteration: 620
+DEBUG    : b_score = -494289.849780
+DEBUG    : iteration: 621
+DEBUG    : b_score = -494289.849780
+DEBUG    : iteration: 622
+DEBUG    : b_score = -494388.881729
+DEBUG    : iteration: 623
+DEBUG    : b_score = -494408.400888
+DEBUG    : iteration: 624
+DEBUG    : b_score = -494365.484651
+DEBUG    : iteration: 625
+DEBUG    : b_score = -494365.484651
+DEBUG    : iteration: 626
+DEBUG    : b_score = -494418.345746
+DEBUG    : iteration: 627
+DEBUG    : b_score = -494405.218077
+DEBUG    : iteration: 628
+DEBUG    : b_score = -494069.609269
+DEBUG    : iteration: 629
+DEBUG    : b_score = -494056.602515
+DEBUG    : iteration: 630
+DEBUG    : b_score = -494070.905845
+DEBUG    : iteration: 631
+DEBUG    : b_score = -494008.446759
+DEBUG    : iteration: 632
+DEBUG    : b_score = -493953.665945
+DEBUG    : iteration: 633
+DEBUG    : b_score = -493953.665945
+DEBUG    : iteration: 634
+DEBUG    : b_score = -493735.178098
+DEBUG    : iteration: 635
+DEBUG    : b_score = -493735.178098
+DEBUG    : iteration: 636
+DEBUG    : b_score = -493735.178098
+DEBUG    : iteration: 637
+DEBUG    : b_score = -493804.826916
+DEBUG    : iteration: 638
+DEBUG    : b_score = -493829.065774
+DEBUG    : iteration: 639
+DEBUG    : b_score = -493829.065774
+DEBUG    : iteration: 640
+DEBUG    : b_score = -493745.709466
+DEBUG    : iteration: 641
+DEBUG    : b_score = -493768.844678
+DEBUG    : iteration: 642
+DEBUG    : b_score = -493768.844678
+DEBUG    : iteration: 643
+DEBUG    : b_score = -494065.496439
+DEBUG    : iteration: 644
+DEBUG    : b_score = -493705.164178
+DEBUG    : iteration: 645
+DEBUG    : b_score = -493705.164178
+DEBUG    : iteration: 646
+DEBUG    : b_score = -493706.688558
+DEBUG    : iteration: 647
+DEBUG    : b_score = -493706.688558
+DEBUG    : iteration: 648
+DEBUG    : b_score = -493745.508299
+DEBUG    : iteration: 649
+DEBUG    : b_score = -493745.508299
+DEBUG    : iteration: 650
+DEBUG    : b_score = -493809.626051
+DEBUG    : iteration: 651
+DEBUG    : b_score = -493686.375130
+DEBUG    : iteration: 652
+DEBUG    : b_score = -493725.432730
+DEBUG    : iteration: 653
+DEBUG    : b_score = -493811.872121
+DEBUG    : iteration: 654
+DEBUG    : b_score = -493811.872121
+DEBUG    : iteration: 655
+DEBUG    : b_score = -493873.600929
+DEBUG    : iteration: 656
+DEBUG    : b_score = -493956.789377
+DEBUG    : iteration: 657
+DEBUG    : b_score = -493677.937642
+DEBUG    : iteration: 658
+DEBUG    : b_score = -493953.226677
+DEBUG    : iteration: 659
+DEBUG    : b_score = -493641.701539
+DEBUG    : iteration: 660
+DEBUG    : b_score = -493641.701539
+DEBUG    : iteration: 661
+DEBUG    : b_score = -493641.701539
+DEBUG    : iteration: 662
+DEBUG    : b_score = -493641.701539
+DEBUG    : iteration: 663
+DEBUG    : b_score = -493641.701539
+DEBUG    : iteration: 664
+DEBUG    : b_score = -493899.685641
+DEBUG    : iteration: 665
+DEBUG    : b_score = -493879.347658
+DEBUG    : iteration: 666
+DEBUG    : b_score = -493763.701276
+DEBUG    : iteration: 667
+DEBUG    : b_score = -493884.385148
+DEBUG    : iteration: 668
+DEBUG    : b_score = -493884.385148
+DEBUG    : iteration: 669
+DEBUG    : b_score = -493884.385148
+DEBUG    : iteration: 670
+DEBUG    : b_score = -493975.923254
+DEBUG    : iteration: 671
+DEBUG    : b_score = -493975.923254
+DEBUG    : iteration: 672
+DEBUG    : b_score = -493975.923254
+DEBUG    : iteration: 673
+DEBUG    : b_score = -493917.874305
+DEBUG    : iteration: 674
+DEBUG    : b_score = -493799.815386
+DEBUG    : iteration: 675
+DEBUG    : b_score = -494006.434594
+DEBUG    : iteration: 676
+DEBUG    : b_score = -494006.434594
+DEBUG    : iteration: 677
+DEBUG    : b_score = -493972.494431
+DEBUG    : iteration: 678
+DEBUG    : b_score = -493870.880645
+DEBUG    : iteration: 679
+DEBUG    : b_score = -493870.880645
+DEBUG    : iteration: 680
+DEBUG    : b_score = -493904.584786
+DEBUG    : iteration: 681
+DEBUG    : b_score = -493816.576104
+DEBUG    : iteration: 682
+DEBUG    : b_score = -493816.576104
+DEBUG    : iteration: 683
+DEBUG    : b_score = -493803.085852
+DEBUG    : iteration: 684
+DEBUG    : b_score = -493803.085852
+DEBUG    : iteration: 685
+DEBUG    : b_score = -493774.709148
+DEBUG    : iteration: 686
+DEBUG    : b_score = -493840.247995
+DEBUG    : iteration: 687
+DEBUG    : b_score = -493778.738729
+DEBUG    : iteration: 688
+DEBUG    : b_score = -493761.401747
+DEBUG    : iteration: 689
+DEBUG    : b_score = -493780.738519
+DEBUG    : iteration: 690
+DEBUG    : b_score = -493780.738519
+DEBUG    : iteration: 691
+DEBUG    : b_score = -493792.335524
+DEBUG    : iteration: 692
+DEBUG    : b_score = -493919.124199
+DEBUG    : iteration: 693
+DEBUG    : b_score = -493840.880427
+DEBUG    : iteration: 694
+DEBUG    : b_score = -493759.406860
+DEBUG    : iteration: 695
+DEBUG    : b_score = -493759.406860
+DEBUG    : iteration: 696
+DEBUG    : b_score = -493722.387086
+DEBUG    : iteration: 697
+DEBUG    : b_score = -493719.717482
+DEBUG    : iteration: 698
+DEBUG    : b_score = -493719.717482
+DEBUG    : iteration: 699
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 700
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 701
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 702
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 703
+DEBUG    : b_score = -493617.146003
+DEBUG    : iteration: 704
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 705
+DEBUG    : b_score = -493627.374516
+DEBUG    : iteration: 706
+DEBUG    : b_score = -493581.363551
+DEBUG    : iteration: 707
+DEBUG    : b_score = -493728.488017
+DEBUG    : iteration: 708
+DEBUG    : b_score = -493730.097370
+DEBUG    : iteration: 709
+DEBUG    : b_score = -493719.076606
+DEBUG    : iteration: 710
+DEBUG    : b_score = -493752.581798
+DEBUG    : iteration: 711
+DEBUG    : b_score = -493772.797064
+DEBUG    : iteration: 712
+DEBUG    : b_score = -493772.797064
+DEBUG    : iteration: 713
+DEBUG    : b_score = -493772.797064
+DEBUG    : iteration: 714
+DEBUG    : b_score = -493791.157628
+DEBUG    : iteration: 715
+DEBUG    : b_score = -494419.965450
+DEBUG    : iteration: 716
+DEBUG    : b_score = -494064.669886
+DEBUG    : iteration: 717
+DEBUG    : b_score = -494064.669886
+DEBUG    : iteration: 718
+DEBUG    : b_score = -494002.910665
+DEBUG    : iteration: 719
+DEBUG    : b_score = -494734.356578
+DEBUG    : iteration: 720
+DEBUG    : b_score = -494290.637167
+DEBUG    : iteration: 721
+DEBUG    : b_score = -494616.276439
+DEBUG    : iteration: 722
+DEBUG    : b_score = -494064.811672
+DEBUG    : iteration: 723
+DEBUG    : b_score = -494097.404110
+DEBUG    : iteration: 724
+DEBUG    : b_score = -494246.551541
+DEBUG    : iteration: 725
+DEBUG    : b_score = -494845.574975
+DEBUG    : iteration: 726
+DEBUG    : b_score = -493934.355307
+DEBUG    : iteration: 727
+DEBUG    : b_score = -493806.770461
+DEBUG    : iteration: 728
+DEBUG    : b_score = -493934.355307
+DEBUG    : iteration: 729
+DEBUG    : b_score = -494138.906929
+DEBUG    : iteration: 730
+DEBUG    : b_score = -494027.790728
+DEBUG    : iteration: 731
+DEBUG    : b_score = -493695.000103
+DEBUG    : iteration: 732
+DEBUG    : b_score = -493690.538626
+DEBUG    : iteration: 733
+DEBUG    : b_score = -493690.538626
+DEBUG    : iteration: 734
+DEBUG    : b_score = -493641.820665
+DEBUG    : iteration: 735
+DEBUG    : b_score = -493933.127652
+DEBUG    : iteration: 736
+DEBUG    : b_score = -493721.987001
+DEBUG    : iteration: 737
+DEBUG    : b_score = -493739.960025
+DEBUG    : iteration: 738
+DEBUG    : b_score = -493754.303428
+DEBUG    : iteration: 739
+DEBUG    : b_score = -493754.303428
+DEBUG    : iteration: 740
+DEBUG    : b_score = -493954.463829
+DEBUG    : iteration: 741
+DEBUG    : b_score = -493721.662994
+DEBUG    : iteration: 742
+DEBUG    : b_score = -493728.911314
+DEBUG    : iteration: 743
+DEBUG    : b_score = -493728.911314
+DEBUG    : iteration: 744
+DEBUG    : b_score = -493728.911314
+DEBUG    : iteration: 745
+DEBUG    : b_score = -493715.652032
+DEBUG    : iteration: 746
+DEBUG    : b_score = -493715.652032
+DEBUG    : iteration: 747
+DEBUG    : b_score = -493762.836819
+DEBUG    : iteration: 748
+DEBUG    : b_score = -493880.682814
+DEBUG    : iteration: 749
+DEBUG    : b_score = -493880.682814
+DEBUG    : iteration: 750
+DEBUG    : b_score = -494010.491202
+DEBUG    : iteration: 751
+DEBUG    : b_score = -494136.168270
+DEBUG    : iteration: 752
+DEBUG    : b_score = -494073.426855
+DEBUG    : iteration: 753
+DEBUG    : b_score = -493924.594800
+DEBUG    : iteration: 754
+DEBUG    : b_score = -493907.356069
+DEBUG    : iteration: 755
+DEBUG    : b_score = -493931.940898
+DEBUG    : iteration: 756
+DEBUG    : b_score = -493723.293393
+DEBUG    : iteration: 757
+DEBUG    : b_score = -493929.079597
+DEBUG    : iteration: 758
+DEBUG    : b_score = -493929.079597
+DEBUG    : iteration: 759
+DEBUG    : b_score = -493969.294204
+DEBUG    : iteration: 760
+DEBUG    : b_score = -493725.674600
+DEBUG    : iteration: 761
+DEBUG    : b_score = -493725.674600
+DEBUG    : iteration: 762
+DEBUG    : b_score = -493994.851093
+DEBUG    : iteration: 763
+DEBUG    : b_score = -493975.092145
+DEBUG    : iteration: 764
+DEBUG    : b_score = -493879.456476
+DEBUG    : iteration: 765
+DEBUG    : b_score = -493878.002208
+DEBUG    : iteration: 766
+DEBUG    : b_score = -493852.403082
+DEBUG    : iteration: 767
+DEBUG    : b_score = -494175.571695
+DEBUG    : iteration: 768
+DEBUG    : b_score = -494050.949282
+DEBUG    : iteration: 769
+DEBUG    : b_score = -494050.949282
+DEBUG    : iteration: 770
+DEBUG    : b_score = -494175.571695
+DEBUG    : iteration: 771
+DEBUG    : b_score = -494103.123948
+DEBUG    : iteration: 772
+DEBUG    : b_score = -493959.889935
+DEBUG    : iteration: 773
+DEBUG    : b_score = -493865.194077
+DEBUG    : iteration: 774
+DEBUG    : b_score = -493865.194077
+DEBUG    : iteration: 775
+DEBUG    : b_score = -493810.618697
+DEBUG    : iteration: 776
+DEBUG    : b_score = -493793.894977
+DEBUG    : iteration: 777
+DEBUG    : b_score = -493793.894977
+DEBUG    : iteration: 778
+DEBUG    : b_score = -493986.080861
+DEBUG    : iteration: 779
+DEBUG    : b_score = -494001.854089
+DEBUG    : iteration: 780
+DEBUG    : b_score = -494028.943572
+DEBUG    : iteration: 781
+DEBUG    : b_score = -493900.333630
+DEBUG    : iteration: 782
+DEBUG    : b_score = -493739.765479
+DEBUG    : iteration: 783
+DEBUG    : b_score = -493881.757638
+DEBUG    : iteration: 784
+DEBUG    : b_score = -493862.575693
+DEBUG    : iteration: 785
+DEBUG    : b_score = -493862.575693
+DEBUG    : iteration: 786
+DEBUG    : b_score = -493713.396517
+DEBUG    : iteration: 787
+DEBUG    : b_score = -493943.262632
+DEBUG    : iteration: 788
+DEBUG    : b_score = -493710.737377
+DEBUG    : iteration: 789
+DEBUG    : b_score = -493710.737377
+DEBUG    : iteration: 790
+DEBUG    : b_score = -493672.130723
+DEBUG    : iteration: 791
+DEBUG    : b_score = -493664.569956
+DEBUG    : iteration: 792
+DEBUG    : b_score = -493666.659442
+DEBUG    : iteration: 793
+DEBUG    : b_score = -493720.111521
+DEBUG    : iteration: 794
+DEBUG    : b_score = -493720.111521
+DEBUG    : iteration: 795
+DEBUG    : b_score = -493642.641027
+DEBUG    : iteration: 796
+DEBUG    : b_score = -493637.007516
+DEBUG    : iteration: 797
+DEBUG    : b_score = -493650.589581
+DEBUG    : iteration: 798
+DEBUG    : b_score = -493663.267445
+DEBUG    : iteration: 799
+DEBUG    : b_score = -493661.882482
+DEBUG    : iteration: 800
+DEBUG    : b_score = -493661.882482
+DEBUG    : iteration: 801
+DEBUG    : b_score = -493722.767053
+DEBUG    : iteration: 802
+DEBUG    : b_score = -493684.135840
+DEBUG    : iteration: 803
+DEBUG    : b_score = -493650.365982
+DEBUG    : iteration: 804
+DEBUG    : b_score = -493645.900449
+DEBUG    : iteration: 805
+DEBUG    : b_score = -493647.115399
+DEBUG    : iteration: 806
+DEBUG    : b_score = -493768.010886
+DEBUG    : iteration: 807
+DEBUG    : b_score = -493588.117394
+DEBUG    : iteration: 808
+DEBUG    : b_score = -493825.096402
+DEBUG    : iteration: 809
+DEBUG    : b_score = -493846.031030
+DEBUG    : iteration: 810
+DEBUG    : b_score = -493848.900632
+DEBUG    : iteration: 811
+DEBUG    : b_score = -493874.962892
+DEBUG    : iteration: 812
+DEBUG    : b_score = -494168.581956
+DEBUG    : iteration: 813
+DEBUG    : b_score = -494230.065790
+DEBUG    : iteration: 814
+DEBUG    : b_score = -493983.751386
+DEBUG    : iteration: 815
+DEBUG    : b_score = -493983.751386
+DEBUG    : iteration: 816
+DEBUG    : b_score = -493886.026171
+DEBUG    : iteration: 817
+DEBUG    : b_score = -494011.342219
+DEBUG    : iteration: 818
+DEBUG    : b_score = -493944.171875
+DEBUG    : iteration: 819
+DEBUG    : b_score = -494109.222012
+DEBUG    : iteration: 820
+DEBUG    : b_score = -494109.222012
+DEBUG    : iteration: 821
+DEBUG    : b_score = -493998.484820
+DEBUG    : iteration: 822
+DEBUG    : b_score = -494080.504745
+DEBUG    : iteration: 823
+DEBUG    : b_score = -494249.116787
+DEBUG    : iteration: 824
+DEBUG    : b_score = -493957.193458
+DEBUG    : iteration: 825
+DEBUG    : b_score = -493937.554037
+DEBUG    : iteration: 826
+DEBUG    : b_score = -493982.681975
+DEBUG    : iteration: 827
+DEBUG    : b_score = -493982.681975
+DEBUG    : iteration: 828
+DEBUG    : b_score = -493987.920872
+DEBUG    : iteration: 829
+DEBUG    : b_score = -493995.883042
+DEBUG    : iteration: 830
+DEBUG    : b_score = -494211.652377
+DEBUG    : iteration: 831
+DEBUG    : b_score = -494211.652377
+DEBUG    : iteration: 832
+DEBUG    : b_score = -494211.652377
+DEBUG    : iteration: 833
+DEBUG    : b_score = -494186.712303
+DEBUG    : iteration: 834
+DEBUG    : b_score = -494173.456393
+DEBUG    : iteration: 835
+DEBUG    : b_score = -494224.170137
+DEBUG    : iteration: 836
+DEBUG    : b_score = -494287.049302
+DEBUG    : iteration: 837
+DEBUG    : b_score = -494274.127895
+DEBUG    : iteration: 838
+DEBUG    : b_score = -494190.564676
+DEBUG    : iteration: 839
+DEBUG    : b_score = -494282.458781
+DEBUG    : iteration: 840
+DEBUG    : b_score = -494318.992360
+DEBUG    : iteration: 841
+DEBUG    : b_score = -494326.326070
+DEBUG    : iteration: 842
+DEBUG    : b_score = -494330.987160
+DEBUG    : iteration: 843
+DEBUG    : b_score = -494316.319756
+DEBUG    : iteration: 844
+DEBUG    : b_score = -494188.699795
+DEBUG    : iteration: 845
+DEBUG    : b_score = -494311.278221
+DEBUG    : iteration: 846
+DEBUG    : b_score = -494311.243084
+DEBUG    : iteration: 847
+DEBUG    : b_score = -494311.278221
+DEBUG    : iteration: 848
+DEBUG    : b_score = -494264.243736
+DEBUG    : iteration: 849
+DEBUG    : b_score = -494264.243736
+DEBUG    : iteration: 850
+DEBUG    : b_score = -494264.742302
+DEBUG    : iteration: 851
+DEBUG    : b_score = -494174.581050
+DEBUG    : iteration: 852
+DEBUG    : b_score = -494174.581050
+DEBUG    : iteration: 853
+DEBUG    : b_score = -494174.581050
+DEBUG    : iteration: 854
+DEBUG    : b_score = -494174.581050
+DEBUG    : iteration: 855
+DEBUG    : b_score = -494281.555322
+DEBUG    : iteration: 856
+DEBUG    : b_score = -494239.300029
+DEBUG    : iteration: 857
+DEBUG    : b_score = -494173.971775
+DEBUG    : iteration: 858
+DEBUG    : b_score = -494107.767550
+DEBUG    : iteration: 859
+DEBUG    : b_score = -494100.845010
+DEBUG    : iteration: 860
+DEBUG    : b_score = -493782.634006
+DEBUG    : iteration: 861
+DEBUG    : b_score = -493782.666987
+DEBUG    : iteration: 862
+DEBUG    : b_score = -493781.385723
+DEBUG    : iteration: 863
+DEBUG    : b_score = -493797.065567
+DEBUG    : iteration: 864
+DEBUG    : b_score = -493797.065567
+DEBUG    : iteration: 865
+DEBUG    : b_score = -493819.506336
+DEBUG    : iteration: 866
+DEBUG    : b_score = -493819.506336
+DEBUG    : iteration: 867
+DEBUG    : b_score = -493780.710804
+DEBUG    : iteration: 868
+DEBUG    : b_score = -493780.710804
+DEBUG    : iteration: 869
+DEBUG    : b_score = -493765.855694
+DEBUG    : iteration: 870
+DEBUG    : b_score = -493741.404795
+DEBUG    : iteration: 871
+DEBUG    : b_score = -493767.855596
+DEBUG    : iteration: 872
+DEBUG    : b_score = -493767.855596
+DEBUG    : iteration: 873
+DEBUG    : b_score = -493802.396381
+DEBUG    : iteration: 874
+DEBUG    : b_score = -493802.396381
+DEBUG    : iteration: 875
+DEBUG    : b_score = -493780.949591
+DEBUG    : iteration: 876
+DEBUG    : b_score = -493864.566473
+DEBUG    : iteration: 877
+DEBUG    : b_score = -493915.829725
+DEBUG    : iteration: 878
+DEBUG    : b_score = -493755.284840
+DEBUG    : iteration: 879
+DEBUG    : b_score = -493972.941832
+DEBUG    : iteration: 880
+DEBUG    : b_score = -493889.798971
+DEBUG    : iteration: 881
+DEBUG    : b_score = -493889.798971
+DEBUG    : iteration: 882
+DEBUG    : b_score = -493889.798971
+DEBUG    : iteration: 883
+DEBUG    : b_score = -493850.783559
+DEBUG    : iteration: 884
+DEBUG    : b_score = -493850.783559
+DEBUG    : iteration: 885
+DEBUG    : b_score = -494029.862461
+DEBUG    : iteration: 886
+DEBUG    : b_score = -493857.735286
+DEBUG    : iteration: 887
+DEBUG    : b_score = -493857.735286
+DEBUG    : iteration: 888
+DEBUG    : b_score = -493894.041522
+DEBUG    : iteration: 889
+DEBUG    : b_score = -493960.912820
+DEBUG    : iteration: 890
+DEBUG    : b_score = -493949.989435
+DEBUG    : iteration: 891
+DEBUG    : b_score = -494007.185543
+DEBUG    : iteration: 892
+DEBUG    : b_score = -494043.319174
+DEBUG    : iteration: 893
+DEBUG    : b_score = -493991.723885
+DEBUG    : iteration: 894
+DEBUG    : b_score = -494081.979682
+DEBUG    : iteration: 895
+DEBUG    : b_score = -494086.339872
+DEBUG    : iteration: 896
+DEBUG    : b_score = -494046.543784
+DEBUG    : iteration: 897
+DEBUG    : b_score = -493991.422406
+DEBUG    : iteration: 898
+DEBUG    : b_score = -494038.985306
+DEBUG    : iteration: 899
+DEBUG    : b_score = -494038.985306
+DEBUG    : iteration: 900
+DEBUG    : b_score = -494034.243582
+DEBUG    : iteration: 901
+DEBUG    : b_score = -494034.243582
+DEBUG    : iteration: 902
+DEBUG    : b_score = -494038.866371
+DEBUG    : iteration: 903
+DEBUG    : b_score = -494104.279913
+DEBUG    : iteration: 904
+DEBUG    : b_score = -494168.301965
+DEBUG    : iteration: 905
+DEBUG    : b_score = -494646.647846
+DEBUG    : iteration: 906
+DEBUG    : b_score = -494515.919734
+DEBUG    : iteration: 907
+DEBUG    : b_score = -494880.056671
+DEBUG    : iteration: 908
+DEBUG    : b_score = -494594.747865
+DEBUG    : iteration: 909
+DEBUG    : b_score = -495036.480225
+DEBUG    : iteration: 910
+DEBUG    : b_score = -494929.273000
+DEBUG    : iteration: 911
+DEBUG    : b_score = -494929.273000
+DEBUG    : iteration: 912
+DEBUG    : b_score = -495103.841488
+DEBUG    : iteration: 913
+DEBUG    : b_score = -494568.944714
+DEBUG    : iteration: 914
+DEBUG    : b_score = -494568.944714
+DEBUG    : iteration: 915
+DEBUG    : b_score = -495075.927349
+DEBUG    : iteration: 916
+DEBUG    : b_score = -494737.893149
+DEBUG    : iteration: 917
+DEBUG    : b_score = -494738.750269
+DEBUG    : iteration: 918
+DEBUG    : b_score = -494738.750269
+DEBUG    : iteration: 919
+DEBUG    : b_score = -494738.750269
+DEBUG    : iteration: 920
+DEBUG    : b_score = -494738.750269
+DEBUG    : iteration: 921
+DEBUG    : b_score = -494379.812548
+DEBUG    : iteration: 922
+DEBUG    : b_score = -494379.812548
+DEBUG    : iteration: 923
+DEBUG    : b_score = -494379.812548
+DEBUG    : iteration: 924
+DEBUG    : b_score = -494398.471226
+DEBUG    : iteration: 925
+DEBUG    : b_score = -494416.813157
+DEBUG    : iteration: 926
+DEBUG    : b_score = -494751.694998
+DEBUG    : iteration: 927
+DEBUG    : b_score = -494359.090152
+DEBUG    : iteration: 928
+DEBUG    : b_score = -494359.090152
+DEBUG    : iteration: 929
+DEBUG    : b_score = -494359.090152
+DEBUG    : iteration: 930
+DEBUG    : b_score = -494359.090152
+DEBUG    : iteration: 931
+DEBUG    : b_score = -494364.951976
+DEBUG    : iteration: 932
+DEBUG    : b_score = -494364.951976
+DEBUG    : iteration: 933
+DEBUG    : b_score = -494654.084602
+DEBUG    : iteration: 934
+DEBUG    : b_score = -494760.500845
+DEBUG    : iteration: 935
+DEBUG    : b_score = -494520.945897
+DEBUG    : iteration: 936
+DEBUG    : b_score = -494520.945897
+DEBUG    : iteration: 937
+DEBUG    : b_score = -494359.247327
+DEBUG    : iteration: 938
+DEBUG    : b_score = -494404.065445
+DEBUG    : iteration: 939
+DEBUG    : b_score = -494474.704491
+DEBUG    : iteration: 940
+DEBUG    : b_score = -494748.051400
+DEBUG    : iteration: 941
+DEBUG    : b_score = -494114.703976
+DEBUG    : iteration: 942
+DEBUG    : b_score = -494833.265123
+DEBUG    : iteration: 943
+DEBUG    : b_score = -494608.538343
+DEBUG    : iteration: 944
+DEBUG    : b_score = -494447.290254
+DEBUG    : iteration: 945
+DEBUG    : b_score = -494402.272733
+DEBUG    : iteration: 946
+DEBUG    : b_score = -494402.272733
+DEBUG    : iteration: 947
+DEBUG    : b_score = -494369.567051
+DEBUG    : iteration: 948
+DEBUG    : b_score = -494348.269959
+DEBUG    : iteration: 949
+DEBUG    : b_score = -494322.348393
+DEBUG    : iteration: 950
+DEBUG    : b_score = -494313.221652
+DEBUG    : iteration: 951
+DEBUG    : b_score = -494313.221652
+DEBUG    : iteration: 952
+DEBUG    : b_score = -494288.715884
+DEBUG    : iteration: 953
+DEBUG    : b_score = -494392.692683
+DEBUG    : iteration: 954
+DEBUG    : b_score = -494364.669473
+DEBUG    : iteration: 955
+DEBUG    : b_score = -494364.669473
+DEBUG    : iteration: 956
+DEBUG    : b_score = -494441.162455
+DEBUG    : iteration: 957
+DEBUG    : b_score = -494431.398697
+DEBUG    : iteration: 958
+DEBUG    : b_score = -494410.325779
+DEBUG    : iteration: 959
+DEBUG    : b_score = -494449.272086
+DEBUG    : iteration: 960
+DEBUG    : b_score = -494449.272086
+DEBUG    : iteration: 961
+DEBUG    : b_score = -494430.857480
+DEBUG    : iteration: 962
+DEBUG    : b_score = -494402.077665
+DEBUG    : iteration: 963
+DEBUG    : b_score = -494449.272086
+DEBUG    : iteration: 964
+DEBUG    : b_score = -494415.847269
+DEBUG    : iteration: 965
+DEBUG    : b_score = -494447.650822
+DEBUG    : iteration: 966
+DEBUG    : b_score = -494393.667820
+DEBUG    : iteration: 967
+DEBUG    : b_score = -494256.447475
+DEBUG    : iteration: 968
+DEBUG    : b_score = -494317.461235
+DEBUG    : iteration: 969
+DEBUG    : b_score = -494097.943126
+DEBUG    : iteration: 970
+DEBUG    : b_score = -494097.943126
+DEBUG    : iteration: 971
+DEBUG    : b_score = -494097.943126
+DEBUG    : iteration: 972
+DEBUG    : b_score = -493909.923990
+DEBUG    : iteration: 973
+DEBUG    : b_score = -493909.923990
+DEBUG    : iteration: 974
+DEBUG    : b_score = -494153.265162
+DEBUG    : iteration: 975
+DEBUG    : b_score = -494137.924480
+DEBUG    : iteration: 976
+DEBUG    : b_score = -494137.924480
+DEBUG    : iteration: 977
+DEBUG    : b_score = -494195.861291
+DEBUG    : iteration: 978
+DEBUG    : b_score = -494195.861291
+DEBUG    : iteration: 979
+DEBUG    : b_score = -494224.269524
+DEBUG    : iteration: 980
+DEBUG    : b_score = -494195.861291
+DEBUG    : iteration: 981
+DEBUG    : b_score = -493976.515617
+DEBUG    : iteration: 982
+DEBUG    : b_score = -493941.236168
+DEBUG    : iteration: 983
+DEBUG    : b_score = -494009.202037
+DEBUG    : iteration: 984
+DEBUG    : b_score = -493936.605906
+DEBUG    : iteration: 985
+DEBUG    : b_score = -493936.605906
+DEBUG    : iteration: 986
+DEBUG    : b_score = -494012.345190
+DEBUG    : iteration: 987
+DEBUG    : b_score = -494040.603167
+DEBUG    : iteration: 988
+DEBUG    : b_score = -493920.025885
+DEBUG    : iteration: 989
+DEBUG    : b_score = -493908.386158
+DEBUG    : iteration: 990
+DEBUG    : b_score = -493908.386158
+DEBUG    : iteration: 991
+DEBUG    : b_score = -494010.803741
+DEBUG    : iteration: 992
+DEBUG    : b_score = -493997.195019
+DEBUG    : iteration: 993
+DEBUG    : b_score = -493932.777795
+DEBUG    : iteration: 994
+DEBUG    : b_score = -493798.982284
+DEBUG    : iteration: 995
+DEBUG    : b_score = -493798.982284
+DEBUG    : iteration: 996
+DEBUG    : b_score = -493798.982284
+DEBUG    : iteration: 997
+DEBUG    : b_score = -493753.766357
+DEBUG    : iteration: 998
+DEBUG    : b_score = -493796.967865
+DEBUG    : iteration: 999
+CRITICAL : Run time: 879.42 seconds
+INFO     : best gene was: [1219, -278, -6287, -3640, -7729, 2685, 317, -2962, 3384, -6275, -1175, -2864, -1764, 1125, -4764, -2840, -5785, 1932, 717, -8462, 5416, -6824, -7776, -8126, -7574, -27, -9241, -9196, -6747, -2047]
+INFO     : on loop 450, with score -493351.672925
+DEBUG    : 0 nuke/s dropped
+DEBUG    : average score after: -504958.818393
+INFO     : ======================================================
+INFO     : Total cost ($M): 493351.67, including carbon (MT): 2572.95, terminal value ($M): 0.00
+INFO     : ======================================================
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2010:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 136034.90, carbon (MT): 1493.16
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 4541.26, GWh 174406.88) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 2000.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 58060.40) : Wind with site capacities (MW): (22: 1000.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 12190.00, GWh 398759.90) : Solar_Thermal with site capacities (MW): (88: 12190.00) 
+INFO     : fossil ($M 119303.64, GWh 1407146.59) : Instant Fossil Thermal, optimisable, max capacity (MW) 26850.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2020:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 87919.68, carbon (MT): 341.39
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 67680.00, GWh 1443049.27) : Wind with site capacities (MW): (22: 34840.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 3170.00, GWh 502457.10) : Solar_Thermal with site capacities (MW): (88: 15360.00) 
+INFO     : fossil ($M 17069.68, GWh 379326.32) : Instant Fossil Thermal, optimisable, max capacity (MW) 26850.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2030:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 106640.41, carbon (MT): 370.27
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 1402121.70) : Wind with site capacities (MW): (22: 33840.00)  (55: 100.00)  (66: 300.00) 
+INFO     : solar ($M 11250.00, GWh 418275.29) : Solar_Thermal with site capacities (MW): (77: 11250.00)  (88: 3170.00) 
+INFO     : fossil ($M 95390.41, GWh 411413.41) : Instant Fossil Thermal, optimisable, max capacity (MW) 46170.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2040:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 131393.65, carbon (MT): 159.04
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 108320.00, GWh 2229486.65) : Wind with site capacities (MW): (22: 54160.00)  (66: 300.00) 
+INFO     : solar ($M 7170.00, GWh 549123.49) : Solar_Thermal with site capacities (MW): (77: 11250.00)  (88: 7170.00) 
+INFO     : fossil ($M 15903.65, GWh 176707.26) : Instant Fossil Thermal, optimisable, max capacity (MW) 19320.00
+INFO     : ------------------------------------------------------
+INFO     : PERIOD 2050:
+INFO     : ------------------------------------------------------
+INFO     : Period cost ($M): 31363.03, carbon (MT): 209.09
+INFO     : Period total demand (GWh): 2038373.76
+INFO     : legacy_coal ($M 0.00, GWh 0.00) : Slow Fossil Thermal, type generic_slow_thermal, fixed, capacity (MW) 0.00
+INFO     : missed_supply ($M 0.00, GWh 0.00) : Linear Missed-Supply, total 0.00 MW-timestamps missed, reliability 100.000%
+INFO     : wind ($M 0.00, GWh 2216637.03) : Wind with site capacities (MW): (22: 54160.00) 
+INFO     : solar ($M 0.00, GWh 234545.40) : Solar_Thermal with site capacities (MW): (88: 7170.00) 
+INFO     : fossil ($M 31363.03, GWh 232318.72) : Instant Fossil Thermal, optimisable, max capacity (MW) 19320.00
+INFO     : ======================================================
+DEBUG    : Finalising geneticalgorithm
