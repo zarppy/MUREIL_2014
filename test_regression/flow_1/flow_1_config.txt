@@ -78,7 +78,11 @@ model: transmission.txgrid.TxGrid
 site_filename: tx_connect_map.csv
 grid_filenames: nodes.csv lines.csv shift_factors.csv A-matrix.csv
 
-[exit
+[Data_Short]
+model: data.ncdata.Data
+ts_csv_list: ts_demand ts_wind
+ts_demand_file: nodal_demand_short.csv
+ts_wind_file: wind_data_short.csv
 
 [Data_Single]
 model: data.ncdata.Data
